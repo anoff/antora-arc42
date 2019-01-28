@@ -1,0 +1,23 @@
+= Antora & ARC42
+Andreas Offenhaeuser <https://blog.anoff.io>
+
+> Trying to get started with Antora by publishing the ARC42 template
+
+== Setup
+
+First get some prerequisites
+
+. Get the https://github.com/arc42/arc42-template[arc42 template] as a git submodule
+. https://docs.antora.org/antora/2.0/install/install-antora/[install Antora]
+
+== Notes on folder structure
+
+. Antora expects all documentation to come in a _module_ (there can be only one module in a build)
+. the playbook can define multiple content sources
+.. each content source needs to point to a root directory of a git repo (local or remote)
+.. you can use `start_path` in a https://docs.antora.org/antora/2.0/playbook/playbook-schema/#content-category[playfile source] to make the docs start relative to the git root
+.. the repo must have at least one commit
+. within this start path https://docs.antora.org/antora/2.0/modules/#module-overview[a module structure] is expected
+.. the https://docs.antora.org/antora/2.0/component-descriptor/#component-descriptor-requirements[antora.yml] file defines to position of a module
+.. there must be a `modules/ROOT` (uppercase) module present
+.. all `.adoc` files must reside in the `modules/XYZ/pages` directory
