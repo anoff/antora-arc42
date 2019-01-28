@@ -2,12 +2,12 @@ site:
   title: Antora ARC42 Template
   # the 404 page and sitemap files only get generated when the url property is set
   url: https://anoff.io/antora-arc42
-  start_page: arc42::index.adoc
+  start_page: arc42::arc42-template.adoc
 content:
   sources:
-  - url: .
-    branches: HEAD, master
+  - url: ./
     start_path: _arc42
+    branches: [HEAD, master]
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable

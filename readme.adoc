@@ -10,14 +10,31 @@ First get some prerequisites
 . Get the https://github.com/arc42/arc42-template[arc42 template] as a git submodule
 . https://docs.antora.org/antora/2.0/install/install-antora/[install Antora]
 
+Then run the make command:
+
+[source,bash]
+----
+make build
+
+# which runs the following commands
+make clean # remove _arc42/ and build/ folders
+make copy-arc42 # copy from the submodule into _arc42/ to fit antora folder structure
+make build # run antora
+----
+
+The generated code is now available in `build/`
+
 == Notes on folder structure
 
-. Antora expects all documentation to come in a _module_ (there can be only one module in a build)
+`Antora` defines _components_ and _modules_. A **component** can have multiple modules that are all located in a fixed directory structure adjacent to each other. Each component must have at least one module, the _ROOT_ module.
+The **playbook** (overall config of the document) references one or more git repositories that contains a component with 1+ modules.
+
+. Antora expects all documentation to come in a _component_ (there can be only one component in a build)
 . the playbook can define multiple content sources
 .. each content source needs to point to a root directory of a git repo (local or remote)
 .. you can use `start_path` in a https://docs.antora.org/antora/2.0/playbook/playbook-schema/#content-category[playfile source] to make the docs start relative to the git root
 .. the repo must have at least one commit
 . within this start path https://docs.antora.org/antora/2.0/modules/#module-overview[a module structure] is expected
-.. the https://docs.antora.org/antora/2.0/component-descriptor/#component-descriptor-requirements[antora.yml] file defines to position of a module
+.. the https://docs.antora.org/antora/2.0/component-descriptor/#component-descriptor-requirements[antora.yml] file defines to position of a component
 .. there must be a `modules/ROOT` (uppercase) module present
 .. all `.adoc` files must reside in the `modules/XYZ/pages` directory
