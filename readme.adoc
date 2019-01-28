@@ -22,7 +22,7 @@ make copy-arc42 # copy from the submodule into _arc42/ to fit antora folder stru
 make build # run antora
 ----
 
-The generated code is now available in `build/`
+The generated code is now available in `dist/`
 
 == Notes on folder structure
 

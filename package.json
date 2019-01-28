@@ -1,0 +1,26 @@
+{
+  "name": "antora-arc42",
+  "version": "1.0.0",
+  "description": "build static site using antora from arc42 template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anoff/antora-arc42.git"
+  },
+  "keywords": [
+    "antora",
+    "arc42",
+    "docs-as-code"
+  ],
+  "author": "anoff <https://anoff.io>",
+  "license": "MIT",
+  "homepage": "https://github.com/anoff/antora-arc42#readme",
+  "devDependencies": {
+    "@antora/cli": "^2.0.0",
+    "@antora/site-generator-default": "^2.0.0"
+  },
+  "private": true
+}
