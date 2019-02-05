@@ -6,7 +6,7 @@ site:
 content:
   sources:
   - url: ./
-    start_path: _arc42
+    start_path: docs
     branches: [HEAD]
 ui:
   bundle:

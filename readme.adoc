@@ -3,6 +3,8 @@ Andreas Offenhaeuser <https://blog.anoff.io>
 
 > Trying to get started with Antora by publishing the ARC42 template
 
+IMPORTANT: TODO: Rewrite these docs to ditch the submodule and Makefile
+
 == Setup
 
 First get some prerequisites
@@ -38,3 +40,7 @@ The **playbook** (overall config of the document) references one or more git rep
 .. the https://docs.antora.org/antora/2.0/component-descriptor/#component-descriptor-requirements[antora.yml] file defines to position of a component
 .. there must be a `modules/ROOT` (uppercase) module present
 .. all `.adoc` files must reside in the `modules/XYZ/pages` directory
+
+== Attribution
+
+- the arc42 docs are link:docs/modules/ROOT/LICENSE.txt[MIT licensed]
