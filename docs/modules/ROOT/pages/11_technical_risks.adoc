@@ -1,8 +1,6 @@
-[[section-technical-risks]]
+:page-partial:
 == Risks and Technical Debts
 
-
-[role="arc42help"]
 ****
 .Contents
 A list of identified technical risks or technical debts, ordered by priority

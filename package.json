@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf dist/",
-    "build": "antora generate playbook.yml --to-dir dist/",
-    "dist": "npm run clean && npm run build"
+    "build": "antora generate playbook.yml --to-dir dist/ --clean",
+    "dist": "npm run build"
   },
   "repository": {
     "type": "git",
