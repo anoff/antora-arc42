@@ -10,4 +10,4 @@ deploy:
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   local-dir: ./dist/
   on:
-    branch: [master, antora-debug]
+    branch: [master]
