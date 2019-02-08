@@ -1,5 +1,5 @@
+= Solution Strategy
 :page-partial:
-== Solution Strategy
 
 ****
 .Contents

@@ -1,7 +1,7 @@
+= Deployment View
 :page-partial:
-== Deployment View
 
-=== Infrastructure Level 1
+== Infrastructure Level 1
 
 ****
 Describe (usually in a combination of diagrams, tables, and text):
@@ -28,7 +28,7 @@ Mapping of Building Blocks to Infrastructure::
 _<description of the mapping>_
 
 
-=== Infrastructure Level 2
+== Infrastructure Level 2
 
 ****
 Here you can include the internal structure of (some) infrastructure elements from level 1.
@@ -36,16 +36,16 @@ Here you can include the internal structure of (some) infrastructure elements fr
 Please copy the structure from level 1 for each selected element.
 ****
 
-==== _<Infrastructure Element 1>_
+=== _<Infrastructure Element 1>_
 
 _<diagram + explanation>_
 
-==== _<Infrastructure Element 2>_
+=== _<Infrastructure Element 2>_
 
 _<diagram + explanation>_
 
 ...
 
-==== _<Infrastructure Element n>_
+=== _<Infrastructure Element n>_
 
 _<diagram + explanation>_

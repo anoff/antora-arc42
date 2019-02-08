@@ -1,5 +1,5 @@
+= Architecture Constraints
 :page-partial:
-== Architecture Constraints
 
 ****
 .Contents

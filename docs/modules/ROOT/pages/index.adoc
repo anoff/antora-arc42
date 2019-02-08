@@ -24,50 +24,50 @@ For documentation of your own system you use better the _plain_ version.
 
 <<<
 // 1. Introduction and Goals
-include::arc42:ROOT:page$01_introduction_and_goals.adoc[leveloffset=+0]
+include::system:ROOT:page$01_introduction_and_goals.adoc[leveloffset=+1]
 
 <<<
 // 2. Architecture Constraints
-include::arc42:ROOT:page$02_architecture_constraints.adoc[leveloffset=+0]
+include::system:ROOT:page$02_architecture_constraints.adoc[leveloffset=+1]
 
 <<<
 // 3. System Scope and Context
-include::arc42:ROOT:page$03_system_scope_and_context.adoc[leveloffset=+0]
+include::system:ROOT:page$03_system_scope_and_context.adoc[leveloffset=+1]
 
 <<<
 // 4. Solution Strategy
-include::arc42:ROOT:page$04_solution_strategy.adoc[leveloffset=+0]
+include::system:ROOT:page$04_solution_strategy.adoc[leveloffset=+1]
 
 <<<
 // 5. Building Block View
-include::arc42:ROOT:page$05_building_block_view.adoc[leveloffset=+0]
+include::system:ROOT:page$05_building_block_view.adoc[leveloffset=+1]
 
 <<<
 // 6. Runtime View
-include::arc42:ROOT:page$06_runtime_view.adoc[leveloffset=+0]
+include::system:ROOT:page$06_runtime_view.adoc[leveloffset=+1]
 
 <<<
 // 7. Deployment View
-include::arc42:ROOT:page$07_deployment_view.adoc[leveloffset=+0]
+include::system:ROOT:page$07_deployment_view.adoc[leveloffset=+1]
 
 <<<
 // 8. Concepts
-include::arc42:ROOT:page$08_concepts.adoc[leveloffset=+0]
+include::system:ROOT:page$08_concepts.adoc[leveloffset=+1]
 
 <<<
 // 9. Design Decisions
-include::arc42:ROOT:page$09_design_decisions.adoc[leveloffset=+0]
+include::system:ROOT:page$09_design_decisions.adoc[leveloffset=+1]
 
 <<<
 // 10. Quality Scenarios
-include::arc42:ROOT:page$10_quality_scenarios.adoc[leveloffset=+0]
+include::system:ROOT:page$10_quality_scenarios.adoc[leveloffset=+1]
 
 <<<
 // 11. Technical Risks
-include::arc42:ROOT:page$11_technical_risks.adoc[leveloffset=+0]
+include::system:ROOT:page$11_technical_risks.adoc[leveloffset=+1]
 
 <<<
 // 12. Glossary
-include::arc42:ROOT:page$12_glossary.adoc[leveloffset=+0]
+include::system:ROOT:page$12_glossary.adoc[leveloffset=+1]
 
 

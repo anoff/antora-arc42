@@ -1,5 +1,5 @@
+= Introduction and Goals
 :page-partial:
-== Introduction and Goals
 
 ****
 Describes the relevant requirements and the driving forces that software architects and development team must consider. These include
@@ -9,7 +9,7 @@ Describes the relevant requirements and the driving forces that software archite
 * relevant stakeholders and their expectations
 ****
 
-=== Requirements Overview
+== Requirements Overview
 
 ****
 .Contents
@@ -28,7 +28,7 @@ If requirements documents exist this overview should refer to these documents.
 Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
 ****
 
-=== Quality Goals
+== Quality Goals
 
 ****
 .Contents
@@ -42,7 +42,7 @@ If you as an architect do not know how the quality of your work will be judged â
 A table with quality goals and concrete scenarios, ordered by priorities
 ****
 
-=== Stakeholders
+== Stakeholders
 
 ****
 .Contents
@@ -64,8 +64,8 @@ Table with role names, person names, and their expectations with respect to the 
 ****
 
 [options="header",cols="1,2,2"]
-|===
+|==
 |Role/Name|Contact|Expectations
 | _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
 | _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
-|===
+|==

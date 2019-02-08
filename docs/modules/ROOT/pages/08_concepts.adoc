@@ -1,5 +1,5 @@
+= Cross-cutting Concepts
 :page-partial:
-== Cross-cutting Concepts
 
 ****
 .Content
@@ -48,18 +48,18 @@ image:08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscuttin
 ****
 
 
-=== _<Concept 1>_
+== _<Concept 1>_
 
 _<explanation>_
 
 
 
-=== _<Concept 2>_
+== _<Concept 2>_
 
 _<explanation>_
 
 ...
 
-=== _<Concept n>_
+== _<Concept n>_
 
 _<explanation>_

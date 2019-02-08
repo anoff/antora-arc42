@@ -1,8 +1,8 @@
 site:
   title: Antora ARC42 Template
   # the 404 page and sitemap files only get generated when the url property is set
-  url: https://anoff.io/antora-arc42
-  start_page: arc42::arc42-template.adoc
+  # url: https://anoff.io/antora-arc42
+  start_page: system::03_system_scope_and_context.adoc
 content:
   sources:
   - url: ./

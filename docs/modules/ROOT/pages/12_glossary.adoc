@@ -1,5 +1,5 @@
+= Glossary
 :page-partial:
-== Glossary
 
 ****
 .Contents

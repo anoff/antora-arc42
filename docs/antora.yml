@@ -1,4 +1,6 @@
-name: arc42
-title: ARC42 AsciiDoc Template
+name: system
+title: System Level
 version: 0.9.0
-start_page: ROOT:arc42-template.adoc
+start_page: 03_system_scope_and_context.adoc
+nav:
+  - modules/ROOT/nav.adoc
