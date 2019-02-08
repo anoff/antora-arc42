@@ -1,8 +1,6 @@
-[[section-concepts]]
+:page-partial:
 == Cross-cutting Concepts
 
-
-[role="arc42help"]
 ****
 .Content
 This section describes overall, principal regulations and solution ideas that are

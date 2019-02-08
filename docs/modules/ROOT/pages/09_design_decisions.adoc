@@ -1,8 +1,6 @@
-[[section-design-decisions]]
+:page-partial:
 == Design Decisions
 
-
-[role="arc42help"]
 ****
 .Contents
 Important, expensive, large scale or risky architecture decisions including rationals.

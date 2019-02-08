@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "10"
 
-script: make build
+script: npm run dist
 
 deploy:
   provider: pages
@@ -10,14 +10,4 @@ deploy:
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   local-dir: ./dist/
   on:
-    branch: master
-
-# disable the default submodule logic
-#   https://gist.github.com/iedemam/9830045
-git:
-  submodules: false
-
-# use sed to replace the SSH URL with the public URL, then init and update submodules
-before_install:
-  - sed -i 's/git@github.com:/git:\/\/github.com\//' .gitmodules
-  - git submodule update --init --recursive
+    branch: [master]
