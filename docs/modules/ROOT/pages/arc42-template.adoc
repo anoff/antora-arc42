@@ -24,50 +24,50 @@ For documentation of your own system you use better the _plain_ version.
 
 <<<
 // 1. Introduction and Goals
-include::01_introduction_and_goals.adoc[leveloffset=+0]
+include::arc42:ROOT:page$01_introduction_and_goals.adoc[leveloffset=+0]
 
 <<<
 // 2. Architecture Constraints
-include::02_architecture_constraints.adoc[leveloffset=+0]
+include::arc42:ROOT:page$02_architecture_constraints.adoc[leveloffset=+0]
 
 <<<
 // 3. System Scope and Context
-include::03_system_scope_and_context.adoc[leveloffset=+0]
+include::arc42:ROOT:page$03_system_scope_and_context.adoc[leveloffset=+0]
 
 <<<
 // 4. Solution Strategy
-include::04_solution_strategy.adoc[leveloffset=+0]
+include::arc42:ROOT:page$04_solution_strategy.adoc[leveloffset=+0]
 
 <<<
 // 5. Building Block View
-include::05_building_block_view.adoc[leveloffset=+0]
+include::arc42:ROOT:page$05_building_block_view.adoc[leveloffset=+0]
 
 <<<
 // 6. Runtime View
-include::06_runtime_view.adoc[leveloffset=+0]
+include::arc42:ROOT:page$06_runtime_view.adoc[leveloffset=+0]
 
 <<<
 // 7. Deployment View
-include::07_deployment_view.adoc[leveloffset=+0]
+include::arc42:ROOT:page$07_deployment_view.adoc[leveloffset=+0]
 
 <<<
 // 8. Concepts
-include::08_concepts.adoc[leveloffset=+0]
+include::arc42:ROOT:page$08_concepts.adoc[leveloffset=+0]
 
 <<<
 // 9. Design Decisions
-include::09_design_decisions.adoc[leveloffset=+0]
+include::arc42:ROOT:page$09_design_decisions.adoc[leveloffset=+0]
 
 <<<
 // 10. Quality Scenarios
-include::10_quality_scenarios.adoc[leveloffset=+0]
+include::arc42:ROOT:page$10_quality_scenarios.adoc[leveloffset=+0]
 
 <<<
 // 11. Technical Risks
-include::11_technical_risks.adoc[leveloffset=+0]
+include::arc42:ROOT:page$11_technical_risks.adoc[leveloffset=+0]
 
 <<<
 // 12. Glossary
-include::12_glossary.adoc[leveloffset=+0]
+include::arc42:ROOT:page$12_glossary.adoc[leveloffset=+0]
 
 
