@@ -1,9 +1,7 @@
 = Antora & ARC42
 Andreas Offenhaeuser <https://blog.anoff.io>
 
-> Trying to get started with Antora by publishing the ARC42 template
-
-IMPORTANT: TODO: Rewrite these docs to ditch the submodule and Makefile
+> Getting started with Antora by publishing the ARC42 template
 
 == Setup
 
@@ -16,12 +14,7 @@ Then run the make command:
 
 [source,bash]
 ----
-make build
-
-# which runs the following commands
-make clean # remove _arc42/ and build/ folders
-make copy-arc42 # copy from the submodule into _arc42/ to fit antora folder structure
-make build # run antora
+npm run dist
 ----
 
 The generated code is now available in `dist/`
@@ -40,6 +33,16 @@ The **playbook** (overall config of the document) references one or more git rep
 .. the https://docs.antora.org/antora/2.0/component-descriptor/#component-descriptor-requirements[antora.yml] file defines to position of a component
 .. there must be a `modules/ROOT` (uppercase) module present
 .. all `.adoc` files must reside in the `modules/XYZ/pages` directory
+
+== Antora-fying
+
+The following steps are necessary to get the arc42 template into an antora compatible format:
+
+. move the adoc files into the antora component structure `modules/ROOT/pages/`
+. create `antora.yml` with the component definition
+. for having an overall file including all chapters the individual pages need to get the `:page-partial:` attribute and have a document title `=`
+. add all pages to the `nav.adoc` to create a navigation menu
+. custom styles in `supplemental-ui/`
 
 == Attribution
 
