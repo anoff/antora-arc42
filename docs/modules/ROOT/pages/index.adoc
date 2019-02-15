@@ -52,11 +52,11 @@ include::system:ROOT:page$07_deployment_view.adoc[leveloffset=+1]
 
 <<<
 // 8. Concepts
-include::system:ROOT:page$08_concepts.adoc[leveloffset=+1]
+include::system:concepts:page$index.adoc[leveloffset=+1]
 
 <<<
 // 9. Design Decisions
-include::system:ROOT:page$09_design_decisions.adoc[leveloffset=+1]
+include::system:adr:page$index.adoc[leveloffset=+1]
 
 <<<
 // 10. Quality Scenarios

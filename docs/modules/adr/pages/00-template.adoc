@@ -1,0 +1,70 @@
+= ADR - <Number> <Decision Shortname>
+:page-partial:
+
+****
+Create an Architecture Decision Record for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques. It should be something that has an effect on how the rest of the project will run. - link://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions[Michael Nygard]
+
+File name should be similar to the title and follow the `ADR - <number> <shortname>` style with each ADR being sequentially numbered.
+****
+
+== Overview
+
+=== Goal
+
+****
+Describe the problem that this decision addresses. Should be 50 words max.
+****
+
+=== Status
+
+****
+📝 proposed
+
+✅ accepted
+
+❌ rejected
+
+☠️ deprecated
+
+👴 superseded by <link new adr>
+****
+
+== Context
+
+=== Constraints
+
+****
+A list of technological, organizational, project, legal factors that limit the range of possible solutions.
+****
+
+=== Assumptions
+
+****
+Anything you take into account in the decision process that is not covered by the projects requirements. Certain aspects that are considered likely to change are also good points to list here.
+****
+
+=== Considered Alternatives
+
+****
+Provide a list of alternatives that are considered as possible solutions. This helps when someone questions the decision to quickly check if an alternative was considered or not.
+****
+
+=== Attendees
+
+****
+Depending on your organization it might help to list anyone involved making this decision, especially stakeholders.
+****
+
+== Decision
+
+=== Change
+
+****
+Describe the actual change that is going to be implemented. What will be changed. Use active speech.
+****
+
+=== Consequences
+
+****
+An unsorted list of positive, negative and neutral consequences after this decision is in effect. What will become easier or more difficult in the future.
+****
