@@ -11,7 +11,7 @@ fi
 
 # echo "$sourcedir -> $targetdir"
 
-mv $sourcedir/_images/** $targetdir
+mv -n $sourcedir/_images/** $targetdir
 
 rmdir $sourcedir/_images
 rmdir $sourcedir
