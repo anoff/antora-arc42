@@ -9,6 +9,11 @@ Describes the relevant requirements and the driving forces that software archite
 * relevant stakeholders and their expectations
 ****
 
+The goal of the _Home Entertainment_ system is to provide an audio and visual interface for television program and internet based media.
+
+.source: example home entertainment system (source: link://www.flickr.com/photos/williamhook/1983337986[flickr])
+image::tv.jpg[A TV with audio system on a sidebar]
+
 == Requirements Overview
 
 ****
@@ -28,6 +33,14 @@ If requirements documents exist this overview should refer to these documents.
 Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
 ****
 
+The main system requirements are:
+
+* `HE-SYS-01`: Convert satellite television program into video and audio signal
+* `HE-SYS-02`: Change television program using a remote control
+* `HE-SYS-03`: Stream video/audio content from the internet
+* `HE-SYS-04`: Control streaming content via LAN connected device e.g. smartphone
+* `HE-SYS-05`: Automatically check for updated software
+
 == Quality Goals
 
 ****
@@ -41,6 +54,8 @@ If you as an architect do not know how the quality of your work will be judged â
 .Form
 A table with quality goals and concrete scenarios, ordered by priorities
 ****
+
+`TODO`
 
 == Stakeholders
 
@@ -63,9 +78,9 @@ These stakeholders determine the extent and the level of detail of your work and
 Table with role names, person names, and their expectations with respect to the architecture and its documentation.
 ****
 
-[options="header",cols="1,2,2"]
-|==
-|Role/Name|Contact|Expectations
-| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
-| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
-|==
+[options=header]
+|===
+|Role|Expectations
+| _<Role-1>_ | _<Expectation-1>_
+| _<Role-2>_ | _<Expectation-2>_
+|===

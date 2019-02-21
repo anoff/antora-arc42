@@ -47,10 +47,12 @@ node "Home Entertainment" as system
 actor Owner
 actor Viewer
 actor Manufacturer
+actor Satellite
 
-system -up- Owner
-system -up- Viewer
+system -down- Owner
+system -down- Viewer
 system -up- Manufacturer
+system -up- Satellite
 ....
 
 .System actors
@@ -60,6 +62,7 @@ system -up- Manufacturer
 | Manufacturer | The manufacturer of the hardware may update firmware without interaction of the device owner
 | Owner | The owner controls the home entertainment system via various controls
 | Viewer | Audio and visual information from the system is consumed by the Viewer (which may be identical to the _Owner_)
+| Satellite | TV content is distributed to the system via satellite service
 |===
 
 == Technical Context
@@ -91,21 +94,24 @@ interface WAN
 interface LAN
 interface Audio
 interface Video
+interface Satellite
 
 WAN )-down- system
 rc -down- system
 LAN -down- system
 Audio -up- system
 Video -up- system
+Satellite )-down- system
 ....
 
 .Technical Interfaces
 [options="header"]
 |===
 | Interface | Description | I/O
-| Audio | The system generates audio information and outputs it via speakers to the _Owner_ | Soundwaves
-| Video | Visual information is tranferred to the _Owner_ | Light
-| LAN | Local area network connection is used for communication between the Owner and the system | media server
-| WAN | An internet connection is used by the system to update its firmware via the _Manufacturer_ | HTTPS
-| Remote Control | A remote control is used by the _Owner_ to modify the system state | physical interaction
+| Audio | The system generates audio information and outputs it via speakers to the _Owner_ | out:Soundwaves
+| Video | Visual information is tranferred to the _Owner_ | out:Light
+| LAN | Local area network connection is used for communication between the Owner and the system | in:media control
+| WAN | An internet connection is used by the system to update its firmware via the _Manufacturer_ | out:HTTPS
+| Remote Control | A remote control is used by the _Owner_ to modify the system state | physical in:interaction
+| Satellite | Using the `DVB-S` standard television program is received by the system | in:DVB-S
 |===
