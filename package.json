@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prevent-jekyll": "touch dist/.nojekyll",
-    "build": "antora generate playbook.yml --to-dir dist/ --clean",
+    "build": "antora generate playbook.yml --clean && sh move-puml.sh",
     "dist": "npm run build && npm run prevent-jekyll"
   },
   "repository": {
@@ -18,12 +18,13 @@
     "arc42",
     "docs-as-code"
   ],
-  "author": "anoff <https://anoff.io>",
+  "author": "Andreas Offenhaeuser <https://anoff.io>",
   "license": "MIT",
   "homepage": "https://github.com/anoff/antora-arc42#readme",
   "devDependencies": {
     "@antora/cli": "^2.0.0",
-    "@antora/site-generator-default": "^2.0.0"
+    "@antora/site-generator-default": "^2.0.0",
+    "asciidoctor-plantuml": "^0.13.0"
   },
   "private": true
 }

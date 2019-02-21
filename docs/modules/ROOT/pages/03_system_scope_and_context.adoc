@@ -1,5 +1,6 @@
 = System Scope and Context
 :page-partial:
+:plantuml-server-url: http://plantuml.com/plantuml
 
 ****
 .Contents
@@ -17,6 +18,22 @@ Various options:
 * Context diagrams
 * Lists of communication partners and their interfaces.
 ****
+
+[plantuml, system-context, png]
+....
+skinparam monochrome true
+title Home Entertainment - System Context
+footer ACME Inc. %date[yyyy]%
+
+node "Home Entertainment" as system
+
+actor Owner as user
+actor Manufacturer as oem
+
+system -up- user
+system -up- oem
+....
+
 
 == Business Context
 
