@@ -173,12 +173,38 @@ The title of the table is the name of your system, the three columns contain the
 </div>
 </div>
 </div>
-<div class="paragraph">
-<p><strong>&lt;Diagram or Table&gt;</strong></p>
+<div class="imageblock plantuml">
+<div class="content">
+<img src="_images/system-context-business.png" alt="system-context-business">
 </div>
-<div class="paragraph">
-<p><strong>&lt;optionally: Explanation of external domain interfaces&gt;</strong></p>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. System actors</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Actor</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manufacturer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The manufacturer of the hardware may update firmware without interaction of the device owner</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Owner</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The owner controls the home entertainment system via various controls</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Viewer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Audio and visual information from the system is consumed by the Viewer (which may be identical to the <em>Owner</em>)</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect1">
@@ -201,15 +227,53 @@ together with a mapping table showing the relationships between channels and inp
 </div>
 </div>
 </div>
-<div class="paragraph">
-<p><strong>&lt;Diagram or Table&gt;</strong></p>
+<div class="imageblock plantuml">
+<div class="content">
+<img src="_images/system-context-technical.png" alt="system-context-technical">
 </div>
-<div class="paragraph">
-<p><strong>&lt;optionally: Explanation of technical interfaces&gt;</strong></p>
 </div>
-<div class="paragraph">
-<p><strong>&lt;Mapping Input/Output to Channels&gt;</strong></p>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Technical Interfaces</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Interface</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">I/O</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Audio</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The system generates audio information and outputs it via speakers to the <em>Owner</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Soundwaves</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Video</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visual information is tranferred to the <em>Owner</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Light</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Local area network connection is used for communication between the Owner and the system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">media server</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An internet connection is used by the system to update its firmware via the <em>Manufacturer</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HTTPS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remote Control</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A remote control is used by the <em>Owner</em> to modify the system state</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">physical interaction</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </article>
