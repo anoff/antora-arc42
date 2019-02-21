@@ -1,6 +1,8 @@
 = Antora & ARC42
 Andreas Offenhaeuser <https://blog.anoff.io>
 
+image::https://cloud.drone.io/api/badges/anoff/antora-arc42/status.svg[Drone build status, link=https://cloud.drone.io/anoff/antora-arc42]
+
 > Getting started with Antora by publishing the ARC42 template
 
 == Setup
@@ -47,3 +49,4 @@ The following steps are necessary to get the arc42 template into an antora compa
 == Attribution
 
 - the arc42 docs are link:docs/modules/ROOT/LICENSE.txt[MIT licensed]
+- `supplemental-ui/` files are based on the link:https://gitlab.com/antora/antora-ui-default/blob/master/[Antora default UI] MPL-2.0 licensed

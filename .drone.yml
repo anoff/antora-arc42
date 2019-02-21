@@ -1,0 +1,20 @@
+kind: pipeline
+name: deploy
+
+steps:
+- name: build
+  image: node:lts-slim
+  commands:
+  - npm install
+  - npm run dist
+- name: publish  
+  image: plugins/gh-pages
+  settings:
+    username:
+      from_secret: github_username
+    password:
+      from_secret: github_token
+    pages_directory: dist/
+  when:
+    branch:
+    - master
