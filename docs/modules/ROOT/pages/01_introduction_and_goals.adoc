@@ -1,6 +1,7 @@
 = Introduction and Goals
 :page-partial:
 
+[.helptext]
 ****
 Describes the relevant requirements and the driving forces that software architects and development team must consider. These include
 
@@ -16,6 +17,7 @@ image::tv.jpg[A TV with audio system on a sidebar]
 
 == Requirements Overview
 
+[.helptext]
 ****
 .Contents
 Short description of the functional requirements, driving forces, extract (or abstract)
@@ -43,6 +45,7 @@ The main system requirements are:
 
 == Quality Goals
 
+[.helptext]
 ****
 .Contents
 The top three (max five) quality goals for the architecture whose fulfillment is of highest importance to the major stakeholders. We really mean quality goals for the architecture. Don't confuse them with project goals. They are not necessarily identical.
@@ -59,6 +62,7 @@ A table with quality goals and concrete scenarios, ordered by priorities
 
 == Stakeholders
 
+[.helptext]
 ****
 .Contents
 Explicit overview of stakeholders of the system, i.e. all person, roles or organizations that

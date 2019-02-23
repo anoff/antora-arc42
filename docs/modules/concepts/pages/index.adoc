@@ -1,6 +1,7 @@
 = Cross-cutting Concepts
 :page-partial:
 
+[.helptext]
 ****
 .Content
 This section describes overall, principal regulations and solution ideas that are

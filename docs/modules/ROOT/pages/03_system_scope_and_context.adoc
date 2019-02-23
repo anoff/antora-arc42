@@ -2,6 +2,7 @@
 :page-partial:
 :plantuml-server-url: http://plantuml.com/plantuml
 
+[.helptext]
 ****
 .Contents
 System scope and context - as the name suggests - delimits your system (i.e. your scope) from all its communication partners
@@ -21,6 +22,7 @@ Various options:
 
 == Business Context
 
+[.helptext]
 ****
 .Contents
 Specification of *all* communication partners (users, IT-systems, ...) with explanations of domain specific inputs and outputs or interfaces.
@@ -67,6 +69,7 @@ system -up- Satellite
 
 == Technical Context
 
+[.helptext]
 ****
 .Contents
 Technical interfaces (channels and transmission media) linking your system to its environment. In addition a mapping of domain specific input/output to the channels, i.e. an explanation with I/O uses which channel.

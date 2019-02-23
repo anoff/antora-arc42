@@ -1,6 +1,7 @@
 = Glossary
 :page-partial:
 
+[.helptext]
 ****
 .Contents
 The most important domain and technical terms that your stakeholders use when discussing the system.

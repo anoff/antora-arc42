@@ -1,6 +1,7 @@
 = Building Block View
 :page-partial:
 
+[.helptext]
 ****
 .Content
 The building block view shows the static decomposition of the system into building blocks (modules, components, subsystems, classes,
@@ -33,6 +34,7 @@ Thus it contains the white box description of selected building blocks of level 
 
 == Whitebox Overall System
 
+[.helptext]
 ****
 Here you describe the decomposition of the overall system using the following white box template. It contains
 
@@ -66,6 +68,7 @@ _<Description of contained building block (black boxes)>_
 Important Interfaces::
 _<Description of important interfaces>_
 
+[.helptext]
 ****
 Insert your explanations of black boxes from level 1:
 
@@ -88,6 +91,7 @@ Its headline is the name of the black box.
 
 === <Name black box 1>
 
+[.helptext]
 ****
 Here you describe <black box 1>
 according the the following black box template:
@@ -135,6 +139,7 @@ _<black box template>_
 
 == Level 2
 
+[.helptext]
 ****
 Here you can specify the inner structure of (some) building blocks from level 1 as white boxes.
 
@@ -145,28 +150,16 @@ Leave out normal, simple, boring or standardized parts of your system
 
 === White Box _<building block 1>_
 
+[.helptext]
 ****
 ...describes the internal structure of _building block 1_.
 ****
 
 _<white box template>_
 
-=== White Box _<building block 2>_
-
-
-_<white box template>_
-
-...
-
-=== White Box _<building block m>_
-
-
-_<white box template>_
-
-
-
 == Level 3
 
+[.helptext]
 ****
 Here you can specify the inner structure of (some) building blocks from level 2 as white boxes.
 
@@ -177,18 +170,9 @@ part of arc42 for additional levels.
 
 === White Box <_building block x.1_>
 
+[.helptext]
 ****
 Specifies the internal structure of _building block x.1_.
 ****
-
-_<white box template>_
-
-
-=== White Box <_building block x.2_>
-
-_<white box template>_
-
-
-=== White Box <_building block y.1_>
 
 _<white box template>_

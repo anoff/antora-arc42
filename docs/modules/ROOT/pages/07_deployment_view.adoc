@@ -3,6 +3,7 @@
 
 == Infrastructure Level 1
 
+[.helptext]
 ****
 Describe (usually in a combination of diagrams, tables, and text):
 
@@ -30,6 +31,7 @@ _<description of the mapping>_
 
 == Infrastructure Level 2
 
+[.helptext]
 ****
 Here you can include the internal structure of (some) infrastructure elements from level 1.
 
