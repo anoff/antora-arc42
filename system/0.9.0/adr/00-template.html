@@ -111,13 +111,16 @@
     <li class="crumb"><a href="00-template.html">ADR - &lt;Number&gt; &lt;Decision Shortname&gt;</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="file:///drone/src/docs/modules/adr/pages/00-template.adoc">Edit this Page</a></div>
+<div id="helptext-toggle">
+  toggle help
+  <i class="fas fa-info-circle"></i> 
+</div>  <div class="edit-this-page"><a href="file:///drone/src/docs/modules/adr/pages/00-template.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
 <h1>ADR - &lt;Number&gt; &lt;Decision Shortname&gt;</h1>
 <div id="preamble">
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Create an Architecture Decision Record for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques. It should be something that has an effect on how the rest of the project will run. - <a href="//thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions">Michael Nygard</a></p>
@@ -134,7 +137,7 @@
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_goal"><a class="anchor" href="#_goal"></a>Goal</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Describe the problem that this decision addresses. Should be 50 words max.</p>
@@ -144,7 +147,7 @@
 </div>
 <div class="sect2">
 <h3 id="_status"><a class="anchor" href="#_status"></a>Status</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>📝 proposed</p>
@@ -171,7 +174,7 @@
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_constraints"><a class="anchor" href="#_constraints"></a>Constraints</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>A list of technological, organizational, project, legal factors that limit the range of possible solutions.</p>
@@ -181,7 +184,7 @@
 </div>
 <div class="sect2">
 <h3 id="_assumptions"><a class="anchor" href="#_assumptions"></a>Assumptions</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Anything you take into account in the decision process that is not covered by the projects requirements. Certain aspects that are considered likely to change are also good points to list here.</p>
@@ -191,7 +194,7 @@
 </div>
 <div class="sect2">
 <h3 id="_considered_alternatives"><a class="anchor" href="#_considered_alternatives"></a>Considered Alternatives</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Provide a list of alternatives that are considered as possible solutions. This helps when someone questions the decision to quickly check if an alternative was considered or not.</p>
@@ -201,7 +204,7 @@
 </div>
 <div class="sect2">
 <h3 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Depending on your organization it might help to list anyone involved making this decision, especially stakeholders.</p>
@@ -216,7 +219,7 @@
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_change"><a class="anchor" href="#_change"></a>Change</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Describe the actual change that is going to be implemented. What will be changed. Use active speech.</p>
@@ -226,7 +229,7 @@
 </div>
 <div class="sect2">
 <h3 id="_consequences"><a class="anchor" href="#_consequences"></a>Consequences</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>An unsorted list of positive, negative and neutral consequences after this decision is in effect. What will become easier or more difficult in the future.</p>
@@ -240,9 +243,10 @@
   </main>
 </div>
 <footer class="footer">
-  <p>Original arc42 template licensed under <a href="https://raw.githubusercontent.com/arc42/arc42-template/master/LICENSE.txt">MIT</a> and modified for antora fit by <a href="https://anoff.io">Andreas Offenhaeuser</a>, the page is created using the Antora Default UI licensed under <a href="https://gitlab.com/antora/antora-ui-default/blob/master/LICENSE">MPL-2.0</a> </p>
+  <p>Original arc42 template licensed under <a href="https://raw.githubusercontent.com/arc42/arc42-template/master/LICENSE.txt">MIT</a> and modified for antora fit by <a href="https://anoff.io">Andreas Offenhaeuser</a></p>
 </footer><script src="../../../_/js/site.js"></script>
 <script src="../../../_/js/vendor/highlight.js"></script>
 <script>hljs.initHighlighting()</script>
+<script src="../../../_/js/vendor/fontawesome.js"></script>
   </body>
 </html>

@@ -111,14 +111,17 @@
     <li class="crumb"><a href="index.html">9. Architecture Decisions</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="file:///drone/src/docs/modules/adr/pages/index.adoc">Edit this Page</a></div>
+<div id="helptext-toggle">
+  toggle help
+  <i class="fas fa-info-circle"></i> 
+</div>  <div class="edit-this-page"><a href="file:///drone/src/docs/modules/adr/pages/index.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
 <h1>Architecture Decisions</h1>
 <div class="sect1">
 <h2 id="_adr_number_decision_shortname"><a class="anchor" href="#_adr_number_decision_shortname"></a>ADR - &lt;Number&gt; &lt;Decision Shortname&gt;</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Create an Architecture Decision Record for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques. It should be something that has an effect on how the rest of the project will run. - <a href="//thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions">Michael Nygard</a></p>
@@ -132,7 +135,7 @@
 <h3 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h3>
 <div class="sect3">
 <h4 id="_goal"><a class="anchor" href="#_goal"></a>Goal</h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Describe the problem that this decision addresses. Should be 50 words max.</p>
@@ -142,7 +145,7 @@
 </div>
 <div class="sect3">
 <h4 id="_status"><a class="anchor" href="#_status"></a>Status</h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>📝 proposed</p>
@@ -167,7 +170,7 @@
 <h3 id="_context"><a class="anchor" href="#_context"></a>Context</h3>
 <div class="sect3">
 <h4 id="_constraints"><a class="anchor" href="#_constraints"></a>Constraints</h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>A list of technological, organizational, project, legal factors that limit the range of possible solutions.</p>
@@ -177,7 +180,7 @@
 </div>
 <div class="sect3">
 <h4 id="_assumptions"><a class="anchor" href="#_assumptions"></a>Assumptions</h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Anything you take into account in the decision process that is not covered by the projects requirements. Certain aspects that are considered likely to change are also good points to list here.</p>
@@ -187,7 +190,7 @@
 </div>
 <div class="sect3">
 <h4 id="_considered_alternatives"><a class="anchor" href="#_considered_alternatives"></a>Considered Alternatives</h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Provide a list of alternatives that are considered as possible solutions. This helps when someone questions the decision to quickly check if an alternative was considered or not.</p>
@@ -197,7 +200,7 @@
 </div>
 <div class="sect3">
 <h4 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Depending on your organization it might help to list anyone involved making this decision, especially stakeholders.</p>
@@ -210,7 +213,7 @@
 <h3 id="_decision"><a class="anchor" href="#_decision"></a>Decision</h3>
 <div class="sect3">
 <h4 id="_change"><a class="anchor" href="#_change"></a>Change</h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Describe the actual change that is going to be implemented. What will be changed. Use active speech.</p>
@@ -220,7 +223,7 @@
 </div>
 <div class="sect3">
 <h4 id="_consequences"><a class="anchor" href="#_consequences"></a>Consequences</h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>An unsorted list of positive, negative and neutral consequences after this decision is in effect. What will become easier or more difficult in the future.</p>
@@ -235,9 +238,10 @@
   </main>
 </div>
 <footer class="footer">
-  <p>Original arc42 template licensed under <a href="https://raw.githubusercontent.com/arc42/arc42-template/master/LICENSE.txt">MIT</a> and modified for antora fit by <a href="https://anoff.io">Andreas Offenhaeuser</a>, the page is created using the Antora Default UI licensed under <a href="https://gitlab.com/antora/antora-ui-default/blob/master/LICENSE">MPL-2.0</a> </p>
+  <p>Original arc42 template licensed under <a href="https://raw.githubusercontent.com/arc42/arc42-template/master/LICENSE.txt">MIT</a> and modified for antora fit by <a href="https://anoff.io">Andreas Offenhaeuser</a></p>
 </footer><script src="../../../_/js/site.js"></script>
 <script src="../../../_/js/vendor/highlight.js"></script>
 <script>hljs.initHighlighting()</script>
+<script src="../../../_/js/vendor/fontawesome.js"></script>
   </body>
 </html>

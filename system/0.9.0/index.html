@@ -107,7 +107,10 @@
   <a href="03_system_scope_and_context.html" class="home-link"></a>
 <nav class="crumbs" aria-label="breadcrumbs">
 </nav>
-  <div class="edit-this-page"><a href="file:///drone/src/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+<div id="helptext-toggle">
+  toggle help
+  <i class="fas fa-info-circle"></i> 
+</div>  <div class="edit-this-page"><a href="file:///drone/src/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
 <hr>
@@ -135,7 +138,7 @@ For documentation of your own system you use better the <em>plain</em> version.<
 <div class="sect1">
 <h2 id="_introduction_and_goals"><a class="anchor" href="#_introduction_and_goals"></a>1. Introduction and Goals</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Describes the relevant requirements and the driving forces that software architects and development team must consider. These include</p>
@@ -166,7 +169,7 @@ For documentation of your own system you use better the <em>plain</em> version.<
 </div>
 <div class="sect2">
 <h3 id="_requirements_overview"><a class="anchor" href="#_requirements_overview"></a>1.1. Requirements Overview</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -214,7 +217,7 @@ If requirements documents exist this overview should refer to these documents.</
 </div>
 <div class="sect2">
 <h3 id="_quality_goals"><a class="anchor" href="#_quality_goals"></a>1.2. Quality Goals</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -237,7 +240,7 @@ If you as an architect do not know how the quality of your work will be judged �
 </div>
 <div class="sect2">
 <h3 id="_stakeholders"><a class="anchor" href="#_stakeholders"></a>1.3. Stakeholders</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -303,7 +306,7 @@ These stakeholders determine the extent and the level of detail of your work and
 <div class="sect1">
 <h2 id="_architecture_constraints"><a class="anchor" href="#_architecture_constraints"></a>2. Architecture Constraints</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -329,7 +332,7 @@ conventions (e.g. programming or versioning guidelines, documentation or naming 
 <div class="sect1">
 <h2 id="_system_scope_and_context"><a class="anchor" href="#_system_scope_and_context"></a>3. System Scope and Context</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -361,7 +364,7 @@ conventions (e.g. programming or versioning guidelines, documentation or naming 
 </div>
 <div class="sect2">
 <h3 id="_business_context"><a class="anchor" href="#_business_context"></a>3.1. Business Context</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -421,7 +424,7 @@ The title of the table is the name of your system, the three columns contain the
 </div>
 <div class="sect2">
 <h3 id="_technical_context"><a class="anchor" href="#_technical_context"></a>3.2. Technical Context</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -497,7 +500,7 @@ together with a mapping table showing the relationships between channels and inp
 <div class="sect1">
 <h2 id="_solution_strategy"><a class="anchor" href="#_solution_strategy"></a>4. Solution Strategy</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -540,7 +543,7 @@ Refer to details in the following sections.</p>
 <div class="sect1">
 <h2 id="_building_block_view"><a class="anchor" href="#_building_block_view"></a>5. Building Block View</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Content</div>
@@ -583,7 +586,7 @@ Thus it contains the white box description of selected building blocks of level 
 </div>
 <div class="sect2">
 <h3 id="_whitebox_overall_system"><a class="anchor" href="#_whitebox_overall_system"></a>5.1. Whitebox Overall System</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Here you describe the decomposition of the overall system using the following white box template. It contains</p>
@@ -640,7 +643,7 @@ In the best case you will get away with examples or simple signatures.</p>
 </dd>
 </dl>
 </div>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Insert your explanations of black boxes from level 1:</p>
@@ -679,7 +682,7 @@ Its headline is the name of the black box.</p>
 </div>
 <div class="sect3">
 <h4 id="_name_black_box_1"><a class="anchor" href="#_name_black_box_1"></a>5.1.1. &lt;Name black box 1&gt;</h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Here you describe &lt;black box 1&gt;
@@ -753,7 +756,7 @@ according the the following black box template:</p>
 </div>
 <div class="sect2">
 <h3 id="_level_2"><a class="anchor" href="#_level_2"></a>5.2. Level 2</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Here you can specify the inner structure of (some) building blocks from level 1 as white boxes.</p>
@@ -767,7 +770,7 @@ Leave out normal, simple, boring or standardized parts of your system</p>
 </div>
 <div class="sect3">
 <h4 id="_white_box_building_block_1"><a class="anchor" href="#_white_box_building_block_1"></a>5.2.1. White Box <em>&lt;building block 1&gt;</em></h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>&#8230;&#8203;describes the internal structure of <em>building block 1</em>.</p>
@@ -778,25 +781,10 @@ Leave out normal, simple, boring or standardized parts of your system</p>
 <p><em>&lt;white box template&gt;</em></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_white_box_building_block_2"><a class="anchor" href="#_white_box_building_block_2"></a>5.2.2. White Box <em>&lt;building block 2&gt;</em></h4>
-<div class="paragraph">
-<p><em>&lt;white box template&gt;</em></p>
-</div>
-<div class="paragraph">
-<p>&#8230;&#8203;</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_white_box_building_block_m"><a class="anchor" href="#_white_box_building_block_m"></a>5.2.3. White Box <em>&lt;building block m&gt;</em></h4>
-<div class="paragraph">
-<p><em>&lt;white box template&gt;</em></p>
-</div>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_level_3"><a class="anchor" href="#_level_3"></a>5.3. Level 3</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Here you can specify the inner structure of (some) building blocks from level 2 as white boxes.</p>
@@ -809,25 +797,13 @@ part of arc42 for additional levels.</p>
 </div>
 <div class="sect3">
 <h4 id="_white_box_building_block_x_1"><a class="anchor" href="#_white_box_building_block_x_1"></a>5.3.1. White Box &lt;_building block x.1_&gt;</h4>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Specifies the internal structure of <em>building block x.1</em>.</p>
 </div>
 </div>
 </div>
-<div class="paragraph">
-<p><em>&lt;white box template&gt;</em></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_white_box_building_block_x_2"><a class="anchor" href="#_white_box_building_block_x_2"></a>5.3.2. White Box &lt;_building block x.2_&gt;</h4>
-<div class="paragraph">
-<p><em>&lt;white box template&gt;</em></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_white_box_building_block_y_1"><a class="anchor" href="#_white_box_building_block_y_1"></a>5.3.3. White Box &lt;_building block y.1_&gt;</h4>
 <div class="paragraph">
 <p><em>&lt;white box template&gt;</em></p>
 </div>
@@ -839,7 +815,7 @@ part of arc42 for additional levels.</p>
 <div class="sect1">
 <h2 id="_runtime_view"><a class="anchor" href="#_runtime_view"></a>6. Runtime View</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -926,7 +902,7 @@ building block instances depicted in this diagram.&gt;</em></p>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_infrastructure_level_1"><a class="anchor" href="#_infrastructure_level_1"></a>7.1. Infrastructure Level 1</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Describe (usually in a combination of diagrams, tables, and text):</p>
@@ -974,7 +950,7 @@ building block instances depicted in this diagram.&gt;</em></p>
 </div>
 <div class="sect2">
 <h3 id="_infrastructure_level_2"><a class="anchor" href="#_infrastructure_level_2"></a>7.2. Infrastructure Level 2</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Here you can include the internal structure of (some) infrastructure elements from level 1.</p>
@@ -1012,7 +988,7 @@ building block instances depicted in this diagram.&gt;</em></p>
 <div class="sect1">
 <h2 id="_cross_cutting_concepts"><a class="anchor" href="#_cross_cutting_concepts"></a>8. Cross-cutting Concepts</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Content</div>
@@ -1129,133 +1105,132 @@ on this list.</p>
 <p><em>&lt;explanation&gt;</em></p>
 </div>
 <div style="page-break-after: always;"></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_architecture_decisions"><a class="anchor" href="#_architecture_decisions"></a>9. Architecture Decisions</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_adr_number_decision_shortname"><a class="anchor" href="#_adr_number_decision_shortname"></a>9.1. ADR - &lt;Number&gt; &lt;Decision Shortname&gt;</h3>
-<div class="sidebarblock">
-<div class="content">
 <div class="paragraph">
-<p>Create an Architecture Decision Record for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques. It should be something that has an effect on how the rest of the project will run. - <a href="//thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions">Michael Nygard</a></p>
-</div>
-<div class="paragraph">
-<p>File name should be similar to the title and follow the <code>ADR - &lt;number&gt; &lt;shortname&gt;</code> style with each ADR being sequentially numbered.</p>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_overview"><a class="anchor" href="#_overview"></a>9.1.1. Overview</h4>
-<div class="sect4">
-<h5 id="_goal"><a class="anchor" href="#_goal"></a>Goal</h5>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Describe the problem that this decision addresses. Should be 50 words max.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_status"><a class="anchor" href="#_status"></a>Status</h5>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>📝 proposed</p>
-</div>
-<div class="paragraph">
-<p>✅ accepted</p>
-</div>
-<div class="paragraph">
-<p>❌ rejected</p>
-</div>
-<div class="paragraph">
-<p>☠️ deprecated</p>
-</div>
-<div class="paragraph">
-<p>👴 superseded by &lt;link new adr&gt;</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_context"><a class="anchor" href="#_context"></a>9.1.2. Context</h4>
-<div class="sect4">
-<h5 id="_constraints"><a class="anchor" href="#_constraints"></a>Constraints</h5>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>A list of technological, organizational, project, legal factors that limit the range of possible solutions.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_assumptions"><a class="anchor" href="#_assumptions"></a>Assumptions</h5>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Anything you take into account in the decision process that is not covered by the projects requirements. Certain aspects that are considered likely to change are also good points to list here.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_considered_alternatives"><a class="anchor" href="#_considered_alternatives"></a>Considered Alternatives</h5>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Provide a list of alternatives that are considered as possible solutions. This helps when someone questions the decision to quickly check if an alternative was considered or not.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h5>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Depending on your organization it might help to list anyone involved making this decision, especially stakeholders.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_decision"><a class="anchor" href="#_decision"></a>9.1.3. Decision</h4>
-<div class="sect4">
-<h5 id="_change"><a class="anchor" href="#_change"></a>Change</h5>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>Describe the actual change that is going to be implemented. What will be changed. Use active speech.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_consequences"><a class="anchor" href="#_consequences"></a>Consequences</h5>
-<div class="sidebarblock">
-<div class="content">
-<div class="paragraph">
-<p>An unsorted list of positive, negative and neutral consequences after this decision is in effect. What will become easier or more difficult in the future.</p>
-</div>
-</div>
+<p>&lt;div class="sect1"&gt;
+&lt;h2 id="_adr_number_decision_shortname"&gt;&lt;a class="anchor" href="#_adr_number_decision_shortname"&gt;&lt;/a&gt;ADR - &lt;Number&gt; &lt;Decision Shortname&gt;&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="sidebarblock helptext"&gt;
+&lt;div class="content"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Create an Architecture Decision Record for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques. It should be something that has an effect on how the rest of the project will run. - &lt;a href="//thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions"&gt;Michael Nygard&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;File name should be similar to the title and follow the &lt;code&gt;ADR - &lt;number&gt; &lt;shortname&gt;&lt;/code&gt; style with each ADR being sequentially numbered.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="_overview"&gt;&lt;a class="anchor" href="#_overview"&gt;&lt;/a&gt;Overview&lt;/h3&gt;
+&lt;div class="sect3"&gt;
+&lt;h4 id="_goal"&gt;&lt;a class="anchor" href="#_goal"&gt;&lt;/a&gt;Goal&lt;/h4&gt;
+&lt;div class="sidebarblock helptext"&gt;
+&lt;div class="content"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Describe the problem that this decision addresses. Should be 50 words max.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect3"&gt;
+&lt;h4 id="_status"&gt;&lt;a class="anchor" href="#_status"&gt;&lt;/a&gt;Status&lt;/h4&gt;
+&lt;div class="sidebarblock helptext"&gt;
+&lt;div class="content"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;📝 proposed&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;✅ accepted&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;❌ rejected&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;☠️ deprecated&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;👴 superseded by &lt;link new adr&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="_context"&gt;&lt;a class="anchor" href="#_context"&gt;&lt;/a&gt;Context&lt;/h3&gt;
+&lt;div class="sect3"&gt;
+&lt;h4 id="_constraints"&gt;&lt;a class="anchor" href="#_constraints"&gt;&lt;/a&gt;Constraints&lt;/h4&gt;
+&lt;div class="sidebarblock helptext"&gt;
+&lt;div class="content"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A list of technological, organizational, project, legal factors that limit the range of possible solutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect3"&gt;
+&lt;h4 id="_assumptions"&gt;&lt;a class="anchor" href="#_assumptions"&gt;&lt;/a&gt;Assumptions&lt;/h4&gt;
+&lt;div class="sidebarblock helptext"&gt;
+&lt;div class="content"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Anything you take into account in the decision process that is not covered by the projects requirements. Certain aspects that are considered likely to change are also good points to list here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect3"&gt;
+&lt;h4 id="_considered_alternatives"&gt;&lt;a class="anchor" href="#_considered_alternatives"&gt;&lt;/a&gt;Considered Alternatives&lt;/h4&gt;
+&lt;div class="sidebarblock helptext"&gt;
+&lt;div class="content"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Provide a list of alternatives that are considered as possible solutions. This helps when someone questions the decision to quickly check if an alternative was considered or not.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect3"&gt;
+&lt;h4 id="_attendees"&gt;&lt;a class="anchor" href="#_attendees"&gt;&lt;/a&gt;Attendees&lt;/h4&gt;
+&lt;div class="sidebarblock helptext"&gt;
+&lt;div class="content"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Depending on your organization it might help to list anyone involved making this decision, especially stakeholders.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="_decision"&gt;&lt;a class="anchor" href="#_decision"&gt;&lt;/a&gt;Decision&lt;/h3&gt;
+&lt;div class="sect3"&gt;
+&lt;h4 id="_change"&gt;&lt;a class="anchor" href="#_change"&gt;&lt;/a&gt;Change&lt;/h4&gt;
+&lt;div class="sidebarblock helptext"&gt;
+&lt;div class="content"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Describe the actual change that is going to be implemented. What will be changed. Use active speech.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect3"&gt;
+&lt;h4 id="_consequences"&gt;&lt;a class="anchor" href="#_consequences"&gt;&lt;/a&gt;Consequences&lt;/h4&gt;
+&lt;div class="sidebarblock helptext"&gt;
+&lt;div class="content"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;An unsorted list of positive, negative and neutral consequences after this decision is in effect. What will become easier or more difficult in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
-</div>
-</div>
 <div class="sect1">
-<h2 id="_quality_requirements"><a class="anchor" href="#_quality_requirements"></a>10. Quality Requirements</h2>
+<h2 id="_quality_requirements"><a class="anchor" href="#_quality_requirements"></a>9. Quality Requirements</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Content</div>
@@ -1274,8 +1249,8 @@ concrete and measurable.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_quality_tree"><a class="anchor" href="#_quality_tree"></a>10.1. Quality Tree</h3>
-<div class="sidebarblock">
+<h3 id="_quality_tree"><a class="anchor" href="#_quality_tree"></a>9.1. Quality Tree</h3>
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Content</div>
@@ -1322,8 +1297,8 @@ The third category of important quality attributes concerns the compatibility of
 </div>
 </div>
 <div class="sect2">
-<h3 id="_quality_scenarios"><a class="anchor" href="#_quality_scenarios"></a>10.2. Quality Scenarios</h3>
-<div class="sidebarblock">
+<h3 id="_quality_scenarios"><a class="anchor" href="#_quality_scenarios"></a>9.2. Quality Scenarios</h3>
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -1366,9 +1341,9 @@ more precisely down to a level of scenarios that can be discussed and evaluated.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_risks_and_technical_debts"><a class="anchor" href="#_risks_and_technical_debts"></a>11. Risks and Technical Debts</h2>
+<h2 id="_risks_and_technical_debts"><a class="anchor" href="#_risks_and_technical_debts"></a>10. Risks and Technical Debts</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -1391,9 +1366,9 @@ more precisely down to a level of scenarios that can be discussed and evaluated.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_glossary"><a class="anchor" href="#_glossary"></a>12. Glossary</h2>
+<h2 id="_glossary"><a class="anchor" href="#_glossary"></a>11. Glossary</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Contents</div>
@@ -1453,9 +1428,10 @@ more precisely down to a level of scenarios that can be discussed and evaluated.
   </main>
 </div>
 <footer class="footer">
-  <p>Original arc42 template licensed under <a href="https://raw.githubusercontent.com/arc42/arc42-template/master/LICENSE.txt">MIT</a> and modified for antora fit by <a href="https://anoff.io">Andreas Offenhaeuser</a>, the page is created using the Antora Default UI licensed under <a href="https://gitlab.com/antora/antora-ui-default/blob/master/LICENSE">MPL-2.0</a> </p>
+  <p>Original arc42 template licensed under <a href="https://raw.githubusercontent.com/arc42/arc42-template/master/LICENSE.txt">MIT</a> and modified for antora fit by <a href="https://anoff.io">Andreas Offenhaeuser</a></p>
 </footer><script src="../../_/js/site.js"></script>
 <script src="../../_/js/vendor/highlight.js"></script>
 <script>hljs.initHighlighting()</script>
+<script src="../../_/js/vendor/fontawesome.js"></script>
   </body>
 </html>

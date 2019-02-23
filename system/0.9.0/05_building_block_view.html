@@ -111,13 +111,16 @@
     <li class="crumb"><a href="05_building_block_view.html">5. Building Block View</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="file:///drone/src/docs/modules/ROOT/pages/05_building_block_view.adoc">Edit this Page</a></div>
+<div id="helptext-toggle">
+  toggle help
+  <i class="fas fa-info-circle"></i> 
+</div>  <div class="edit-this-page"><a href="file:///drone/src/docs/modules/ROOT/pages/05_building_block_view.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
 <h1>Building Block View</h1>
 <div id="preamble">
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <div class="title">Content</div>
@@ -163,7 +166,7 @@ Thus it contains the white box description of selected building blocks of level 
 <div class="sect1">
 <h2 id="_whitebox_overall_system"><a class="anchor" href="#_whitebox_overall_system"></a>Whitebox Overall System</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Here you describe the decomposition of the overall system using the following white box template. It contains</p>
@@ -220,7 +223,7 @@ In the best case you will get away with examples or simple signatures.</p>
 </dd>
 </dl>
 </div>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Insert your explanations of black boxes from level 1:</p>
@@ -259,7 +262,7 @@ Its headline is the name of the black box.</p>
 </div>
 <div class="sect2">
 <h3 id="_name_black_box_1"><a class="anchor" href="#_name_black_box_1"></a>&lt;Name black box 1&gt;</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Here you describe &lt;black box 1&gt;
@@ -335,7 +338,7 @@ according the the following black box template:</p>
 <div class="sect1">
 <h2 id="_level_2"><a class="anchor" href="#_level_2"></a>Level 2</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Here you can specify the inner structure of (some) building blocks from level 1 as white boxes.</p>
@@ -349,7 +352,7 @@ Leave out normal, simple, boring or standardized parts of your system</p>
 </div>
 <div class="sect2">
 <h3 id="_white_box_building_block_1"><a class="anchor" href="#_white_box_building_block_1"></a>White Box <em>&lt;building block 1&gt;</em></h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>&#8230;&#8203;describes the internal structure of <em>building block 1</em>.</p>
@@ -360,27 +363,12 @@ Leave out normal, simple, boring or standardized parts of your system</p>
 <p><em>&lt;white box template&gt;</em></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_white_box_building_block_2"><a class="anchor" href="#_white_box_building_block_2"></a>White Box <em>&lt;building block 2&gt;</em></h3>
-<div class="paragraph">
-<p><em>&lt;white box template&gt;</em></p>
-</div>
-<div class="paragraph">
-<p>&#8230;&#8203;</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_white_box_building_block_m"><a class="anchor" href="#_white_box_building_block_m"></a>White Box <em>&lt;building block m&gt;</em></h3>
-<div class="paragraph">
-<p><em>&lt;white box template&gt;</em></p>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_level_3"><a class="anchor" href="#_level_3"></a>Level 3</h2>
 <div class="sectionbody">
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Here you can specify the inner structure of (some) building blocks from level 2 as white boxes.</p>
@@ -393,7 +381,7 @@ part of arc42 for additional levels.</p>
 </div>
 <div class="sect2">
 <h3 id="_white_box_building_block_x_1"><a class="anchor" href="#_white_box_building_block_x_1"></a>White Box &lt;_building block x.1_&gt;</h3>
-<div class="sidebarblock">
+<div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
 <p>Specifies the internal structure of <em>building block x.1</em>.</p>
@@ -404,27 +392,16 @@ part of arc42 for additional levels.</p>
 <p><em>&lt;white box template&gt;</em></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_white_box_building_block_x_2"><a class="anchor" href="#_white_box_building_block_x_2"></a>White Box &lt;_building block x.2_&gt;</h3>
-<div class="paragraph">
-<p><em>&lt;white box template&gt;</em></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_white_box_building_block_y_1"><a class="anchor" href="#_white_box_building_block_y_1"></a>White Box &lt;_building block y.1_&gt;</h3>
-<div class="paragraph">
-<p><em>&lt;white box template&gt;</em></p>
-</div>
-</div>
 </div>
 </div>
 </article>
   </main>
 </div>
 <footer class="footer">
-  <p>Original arc42 template licensed under <a href="https://raw.githubusercontent.com/arc42/arc42-template/master/LICENSE.txt">MIT</a> and modified for antora fit by <a href="https://anoff.io">Andreas Offenhaeuser</a>, the page is created using the Antora Default UI licensed under <a href="https://gitlab.com/antora/antora-ui-default/blob/master/LICENSE">MPL-2.0</a> </p>
+  <p>Original arc42 template licensed under <a href="https://raw.githubusercontent.com/arc42/arc42-template/master/LICENSE.txt">MIT</a> and modified for antora fit by <a href="https://anoff.io">Andreas Offenhaeuser</a></p>
 </footer><script src="../../_/js/site.js"></script>
 <script src="../../_/js/vendor/highlight.js"></script>
 <script>hljs.initHighlighting()</script>
+<script src="../../_/js/vendor/fontawesome.js"></script>
   </body>
 </html>
