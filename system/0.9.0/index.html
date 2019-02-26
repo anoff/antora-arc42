@@ -88,6 +88,14 @@
     <span class="version">0.9.0</span>
   </div>
   <ul class="components">
+    <li class="component">
+      <span class="title">Media Manager</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../mediaman/0.9.0/05_building_block_view.html">0.9.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <span class="title">System Level</span>
       <ul class="versions">
@@ -110,7 +118,7 @@
 <div id="helptext-toggle">
   toggle help
   <i class="fas fa-info-circle"></i> 
-</div>  <div class="edit-this-page"><a href="file:///drone/src/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+</div>  <div class="edit-this-page"><a href="https://github.com/anoff/antora-arc42/edit/master/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
 <hr>
@@ -484,7 +492,7 @@ together with a mapping table showing the relationships between channels and inp
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Remote Control</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">A remote control is used by the <em>Owner</em> to modify the system state</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">physical in:interaction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in:physical interaction</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Satellite</p></td>
@@ -627,6 +635,11 @@ In the best case you will get away with examples or simple signatures.</p>
 <div class="paragraph">
 <p><em><strong>&lt;Overview Diagram&gt;</strong></em></p>
 </div>
+<div class="imageblock plantuml">
+<div class="content">
+<img src="_images/building-block-lvl1.png" alt="building-block-lvl1">
+</div>
+</div>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Motivation</dt>
@@ -768,8 +781,6 @@ Leave out normal, simple, boring or standardized parts of your system</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_white_box_building_block_1"><a class="anchor" href="#_white_box_building_block_1"></a>5.2.1. White Box <em>&lt;building block 1&gt;</em></h4>
 <div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
@@ -777,9 +788,13 @@ Leave out normal, simple, boring or standardized parts of your system</p>
 </div>
 </div>
 </div>
-<div class="paragraph">
-<p><em>&lt;white box template&gt;</em></p>
+<div class="imageblock plantuml">
+<div class="content">
+<img src="_images/building-block-lvl2-media.png" alt="building-block-lvl2-media">
 </div>
+</div>
+<div class="paragraph">
+<p>This is an explanation of the media manager subsystem written in another repository.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1105,130 +1120,131 @@ on this list.</p>
 <p><em>&lt;explanation&gt;</em></p>
 </div>
 <div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_architecture_decisions"><a class="anchor" href="#_architecture_decisions"></a>9. Architecture Decisions</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_adr_number_decision_shortname"><a class="anchor" href="#_adr_number_decision_shortname"></a>9.1. ADR - &lt;Number&gt; &lt;Decision Shortname&gt;</h3>
+<div class="sidebarblock helptext">
+<div class="content">
 <div class="paragraph">
-<p>&lt;div class="sect1"&gt;
-&lt;h2 id="_adr_number_decision_shortname"&gt;&lt;a class="anchor" href="#_adr_number_decision_shortname"&gt;&lt;/a&gt;ADR - &lt;Number&gt; &lt;Decision Shortname&gt;&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="sidebarblock helptext"&gt;
-&lt;div class="content"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Create an Architecture Decision Record for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques. It should be something that has an effect on how the rest of the project will run. - &lt;a href="//thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions"&gt;Michael Nygard&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;File name should be similar to the title and follow the &lt;code&gt;ADR - &lt;number&gt; &lt;shortname&gt;&lt;/code&gt; style with each ADR being sequentially numbered.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect2"&gt;
-&lt;h3 id="_overview"&gt;&lt;a class="anchor" href="#_overview"&gt;&lt;/a&gt;Overview&lt;/h3&gt;
-&lt;div class="sect3"&gt;
-&lt;h4 id="_goal"&gt;&lt;a class="anchor" href="#_goal"&gt;&lt;/a&gt;Goal&lt;/h4&gt;
-&lt;div class="sidebarblock helptext"&gt;
-&lt;div class="content"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Describe the problem that this decision addresses. Should be 50 words max.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect3"&gt;
-&lt;h4 id="_status"&gt;&lt;a class="anchor" href="#_status"&gt;&lt;/a&gt;Status&lt;/h4&gt;
-&lt;div class="sidebarblock helptext"&gt;
-&lt;div class="content"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;📝 proposed&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;✅ accepted&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;❌ rejected&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;☠️ deprecated&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;👴 superseded by &lt;link new adr&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect2"&gt;
-&lt;h3 id="_context"&gt;&lt;a class="anchor" href="#_context"&gt;&lt;/a&gt;Context&lt;/h3&gt;
-&lt;div class="sect3"&gt;
-&lt;h4 id="_constraints"&gt;&lt;a class="anchor" href="#_constraints"&gt;&lt;/a&gt;Constraints&lt;/h4&gt;
-&lt;div class="sidebarblock helptext"&gt;
-&lt;div class="content"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;A list of technological, organizational, project, legal factors that limit the range of possible solutions.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect3"&gt;
-&lt;h4 id="_assumptions"&gt;&lt;a class="anchor" href="#_assumptions"&gt;&lt;/a&gt;Assumptions&lt;/h4&gt;
-&lt;div class="sidebarblock helptext"&gt;
-&lt;div class="content"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Anything you take into account in the decision process that is not covered by the projects requirements. Certain aspects that are considered likely to change are also good points to list here.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect3"&gt;
-&lt;h4 id="_considered_alternatives"&gt;&lt;a class="anchor" href="#_considered_alternatives"&gt;&lt;/a&gt;Considered Alternatives&lt;/h4&gt;
-&lt;div class="sidebarblock helptext"&gt;
-&lt;div class="content"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Provide a list of alternatives that are considered as possible solutions. This helps when someone questions the decision to quickly check if an alternative was considered or not.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect3"&gt;
-&lt;h4 id="_attendees"&gt;&lt;a class="anchor" href="#_attendees"&gt;&lt;/a&gt;Attendees&lt;/h4&gt;
-&lt;div class="sidebarblock helptext"&gt;
-&lt;div class="content"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Depending on your organization it might help to list anyone involved making this decision, especially stakeholders.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect2"&gt;
-&lt;h3 id="_decision"&gt;&lt;a class="anchor" href="#_decision"&gt;&lt;/a&gt;Decision&lt;/h3&gt;
-&lt;div class="sect3"&gt;
-&lt;h4 id="_change"&gt;&lt;a class="anchor" href="#_change"&gt;&lt;/a&gt;Change&lt;/h4&gt;
-&lt;div class="sidebarblock helptext"&gt;
-&lt;div class="content"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Describe the actual change that is going to be implemented. What will be changed. Use active speech.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect3"&gt;
-&lt;h4 id="_consequences"&gt;&lt;a class="anchor" href="#_consequences"&gt;&lt;/a&gt;Consequences&lt;/h4&gt;
-&lt;div class="sidebarblock helptext"&gt;
-&lt;div class="content"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;An unsorted list of positive, negative and neutral consequences after this decision is in effect. What will become easier or more difficult in the future.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</p>
+<p>Create an Architecture Decision Record for "architecturally significant" decisions: those that affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques. It should be something that has an effect on how the rest of the project will run. - <a href="//thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions">Michael Nygard</a></p>
+</div>
+<div class="paragraph">
+<p>File name should be similar to the title and follow the <code>ADR - &lt;number&gt; &lt;shortname&gt;</code> style with each ADR being sequentially numbered.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_overview"><a class="anchor" href="#_overview"></a>9.1.1. Overview</h4>
+<div class="sect4">
+<h5 id="_goal"><a class="anchor" href="#_goal"></a>Goal</h5>
+<div class="sidebarblock helptext">
+<div class="content">
+<div class="paragraph">
+<p>Describe the problem that this decision addresses. Should be 50 words max.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_status"><a class="anchor" href="#_status"></a>Status</h5>
+<div class="sidebarblock helptext">
+<div class="content">
+<div class="paragraph">
+<p>📝 proposed</p>
+</div>
+<div class="paragraph">
+<p>✅ accepted</p>
+</div>
+<div class="paragraph">
+<p>❌ rejected</p>
+</div>
+<div class="paragraph">
+<p>☠️ deprecated</p>
+</div>
+<div class="paragraph">
+<p>👴 superseded by &lt;link new adr&gt;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_context"><a class="anchor" href="#_context"></a>9.1.2. Context</h4>
+<div class="sect4">
+<h5 id="_constraints"><a class="anchor" href="#_constraints"></a>Constraints</h5>
+<div class="sidebarblock helptext">
+<div class="content">
+<div class="paragraph">
+<p>A list of technological, organizational, project, legal factors that limit the range of possible solutions.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_assumptions"><a class="anchor" href="#_assumptions"></a>Assumptions</h5>
+<div class="sidebarblock helptext">
+<div class="content">
+<div class="paragraph">
+<p>Anything you take into account in the decision process that is not covered by the projects requirements. Certain aspects that are considered likely to change are also good points to list here.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_considered_alternatives"><a class="anchor" href="#_considered_alternatives"></a>Considered Alternatives</h5>
+<div class="sidebarblock helptext">
+<div class="content">
+<div class="paragraph">
+<p>Provide a list of alternatives that are considered as possible solutions. This helps when someone questions the decision to quickly check if an alternative was considered or not.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_attendees"><a class="anchor" href="#_attendees"></a>Attendees</h5>
+<div class="sidebarblock helptext">
+<div class="content">
+<div class="paragraph">
+<p>Depending on your organization it might help to list anyone involved making this decision, especially stakeholders.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_decision"><a class="anchor" href="#_decision"></a>9.1.3. Decision</h4>
+<div class="sect4">
+<h5 id="_change"><a class="anchor" href="#_change"></a>Change</h5>
+<div class="sidebarblock helptext">
+<div class="content">
+<div class="paragraph">
+<p>Describe the actual change that is going to be implemented. What will be changed. Use active speech.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_consequences"><a class="anchor" href="#_consequences"></a>Consequences</h5>
+<div class="sidebarblock helptext">
+<div class="content">
+<div class="paragraph">
+<p>An unsorted list of positive, negative and neutral consequences after this decision is in effect. What will become easier or more difficult in the future.</p>
+</div>
+</div>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="sect1">
-<h2 id="_quality_requirements"><a class="anchor" href="#_quality_requirements"></a>9. Quality Requirements</h2>
+<h2 id="_quality_requirements"><a class="anchor" href="#_quality_requirements"></a>10. Quality Requirements</h2>
 <div class="sectionbody">
 <div class="sidebarblock helptext">
 <div class="content">
@@ -1249,7 +1265,7 @@ concrete and measurable.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_quality_tree"><a class="anchor" href="#_quality_tree"></a>9.1. Quality Tree</h3>
+<h3 id="_quality_tree"><a class="anchor" href="#_quality_tree"></a>10.1. Quality Tree</h3>
 <div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
@@ -1297,7 +1313,7 @@ The third category of important quality attributes concerns the compatibility of
 </div>
 </div>
 <div class="sect2">
-<h3 id="_quality_scenarios"><a class="anchor" href="#_quality_scenarios"></a>9.2. Quality Scenarios</h3>
+<h3 id="_quality_scenarios"><a class="anchor" href="#_quality_scenarios"></a>10.2. Quality Scenarios</h3>
 <div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
@@ -1341,7 +1357,7 @@ more precisely down to a level of scenarios that can be discussed and evaluated.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_risks_and_technical_debts"><a class="anchor" href="#_risks_and_technical_debts"></a>10. Risks and Technical Debts</h2>
+<h2 id="_risks_and_technical_debts"><a class="anchor" href="#_risks_and_technical_debts"></a>11. Risks and Technical Debts</h2>
 <div class="sectionbody">
 <div class="sidebarblock helptext">
 <div class="content">
@@ -1366,7 +1382,7 @@ more precisely down to a level of scenarios that can be discussed and evaluated.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_glossary"><a class="anchor" href="#_glossary"></a>11. Glossary</h2>
+<h2 id="_glossary"><a class="anchor" href="#_glossary"></a>12. Glossary</h2>
 <div class="sectionbody">
 <div class="sidebarblock helptext">
 <div class="content">
