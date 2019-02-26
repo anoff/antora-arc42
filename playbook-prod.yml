@@ -5,12 +5,12 @@ site:
   start_page: system::03_system_scope_and_context.adoc
 content:
   sources:
-  - url: ./
+  - url: https://github.com/anoff/antora-arc42.git
     start_path: docs
-    branches: [HEAD]
-  - url: ../antora-arc42-mediaman
+    branches: [master]
+  - url: https://github.com/anoff/antora-arc42-mediaman.git
     start_path: docs
-    branches: [HEAD]
+    branches: [master]
 ui:
   bundle:
     # url: /developer/anoff/antora-arc42-ui/build/ui-bundle.zip # local

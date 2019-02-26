@@ -5,6 +5,15 @@ image::https://cloud.drone.io/api/badges/anoff/antora-arc42/status.svg[Drone bui
 
 > Getting started with Antora by publishing the ARC42 template
 
+== Description
+
+This repo contains an example of how to build a multi repository architecture documentation based around the arc42 template.
+
+Repository overview:
+
+. link:https://github.com/anoff/antora-arc42[anoff/antora-arc42] base component containing all system wide information, split up into several modules
+
+
 == Setup
 
 First get some prerequisites

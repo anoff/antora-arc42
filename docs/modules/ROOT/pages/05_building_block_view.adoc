@@ -1,5 +1,6 @@
 = Building Block View
 :page-partial:
+:plantuml-server-url: http://plantuml.com/plantuml
 
 [.helptext]
 ****
@@ -56,6 +57,36 @@ In the best case you will get away with examples or simple signatures.
 ****
 
 _**<Overview Diagram>**_
+
+[plantuml, building-block-lvl1, png]
+....
+skinparam monochrome true
+title Home Entertainment - Building Block Lvl1
+footer ACME Inc. %date[yyyy]%
+
+interface "Remote Control" as rc
+interface WAN
+interface LAN
+interface Audio
+interface Video
+interface Satellite
+
+component "Home Entertainment" as system {
+  node "Media Manager" as mediaman
+  node LCD
+  node "ext Speaker" as speaker
+  node "AV System" as av
+}
+
+rc -down- mediaman
+WAN -right- mediaman
+LAN -up- mediaman
+Satellite -down- mediaman
+Audio -up- speaker
+Video -up- LCD
+speaker - av
+LCD - av
+....
 
 Motivation::
 
@@ -148,14 +179,7 @@ Please prefer relevance over completeness. Specify important, surprising, risky,
 Leave out normal, simple, boring or standardized parts of your system
 ****
 
-=== White Box _<building block 1>_
-
-[.helptext]
-****
-...describes the internal structure of _building block 1_.
-****
-
-_<white box template>_
+include::mediaman:ROOT:page$05_building_block_view.adoc[levelOffset=+1, tags=level2]
 
 == Level 3
 

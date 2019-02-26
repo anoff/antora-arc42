@@ -44,12 +44,12 @@ skinparam monochrome true
 title Home Entertainment - System Context
 footer ACME Inc. %date[yyyy]%
 
-node "Home Entertainment" as system
+component "Home Entertainment" as system
 
 actor Owner
 actor Viewer
-actor Manufacturer
-actor Satellite
+node Manufacturer
+node Satellite
 
 system -down- Owner
 system -down- Viewer
@@ -90,7 +90,7 @@ skinparam monochrome true
 title Home Entertainment - Technical System Context
 footer ACME Inc. %date[yyyy]%
 
-node "Home Entertainment" as system
+component "Home Entertainment" as system
 
 interface "Remote Control" as rc
 interface WAN
@@ -115,6 +115,6 @@ Satellite )-down- system
 | Video | Visual information is tranferred to the _Owner_ | out:Light
 | LAN | Local area network connection is used for communication between the Owner and the system | in:media control
 | WAN | An internet connection is used by the system to update its firmware via the _Manufacturer_ | out:HTTPS
-| Remote Control | A remote control is used by the _Owner_ to modify the system state | physical in:interaction
+| Remote Control | A remote control is used by the _Owner_ to modify the system state | in:physical interaction
 | Satellite | Using the `DVB-S` standard television program is received by the system | in:DVB-S
 |===
