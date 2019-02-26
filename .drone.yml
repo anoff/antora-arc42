@@ -6,7 +6,7 @@ steps:
   image: node:lts-slim
   commands:
   - npm install
-  - npm run dist
+  - npm run dist:prod
 - name: publish  
   image: plugins/gh-pages
   settings:
