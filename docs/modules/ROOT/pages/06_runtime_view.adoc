@@ -29,13 +29,51 @@ There are many notations for describing scenarios, e.g.
 
 ****
 
-== <Runtime Scenario 1>
+== Show TV channel
 
+In the basic use case of watching a TV channel the media manager simply forwards content from the satellite to the AV component.
 
-* _<insert runtime diagram or textual description of the scenario>_
-* _<insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.>_
+[plantuml, runtime-tv-channel, png]
+----
+@startuml
+skinparam monochrome true
+participant "Media Manager" as mediaman
+participant "AV component" as av
+participant "Speaker" as speaker
+participant LCD
 
-== <Runtime Scenario 2>
+mediaman -> av: media stream
+av -> speaker: audio stream
+av -> LCD: video stream
+@enduml
+----
+
+== Update software
+
+An available update of the system software on manufacturer servers is de-coupled into software download and software installation. After a successful download the Owner is informed about an update possibility and waits for his input.
+
+[plantuml, runtime-tv-channel, png]
+----
+@startuml
+skinparam monochrome true
+participant Manufacturer
+participant "Media Manager" as mediaman
+participant "AV component" as av
+participant LCD
+participant Owner
+
+mediaman -> Manufacturer: GET device software status
+mediaman <-- Manufacturer: new software version available
+mediaman -> Manufacturer: download new software
+mediaman <-- Manufacturer
+mediaman -> av: overlay update info
+av -> LCD++: display update info
+LCD --> Owner: inform owner of update
+Owner -> mediaman: perform update
+mediaman -> mediaman: install update on self
+mediaman -> av: remove update overlay
+av -> LCD--: show raw media feed onlyk
+@enduml
+----
 
 == <Runtime Scenario n>

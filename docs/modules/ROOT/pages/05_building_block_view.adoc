@@ -1,6 +1,7 @@
 = Building Block View
 :page-partial:
 :plantuml-server-url: http://plantuml.com/plantuml
+:name-av: AV component
 
 [.helptext]
 ****
@@ -60,6 +61,7 @@ _**<Overview Diagram>**_
 
 [plantuml, building-block-lvl1, png]
 ....
+@startuml
 skinparam monochrome true
 title Home Entertainment - Building Block Lvl1
 footer ACME Inc. %date[yyyy]%
@@ -74,30 +76,39 @@ interface Satellite
 component "Home Entertainment" as system {
   node "Media Manager" as mediaman
   node LCD
-  node "ext Speaker" as speaker
+  node "Speaker" as speaker
   node "AV System" as av
 }
 
 rc -down- mediaman
-WAN -right- mediaman
-LAN -up- mediaman
-Satellite -down- mediaman
+WAN -down- mediaman
+LAN -down- mediaman
+Satellite - mediaman
 Audio -up- speaker
 Video -up- LCD
-speaker - av
-LCD - av
+speaker -up- av
+LCD -up- av
+mediaman -right- av
+@enduml
 ....
 
 Motivation::
 
-_<text explanation>_
+The system is split up based on its physical domain and interfaces on the first level.
 
 
 Contained Building Blocks::
-_<Description of contained building block (black boxes)>_
 
-Important Interfaces::
-_<Description of important interfaces>_
+[options=header]
+|===
+|Block|Description
+|Media Manager *|Manage active media content by taking commands via WAN or the remote control
+|LCD|Display video signal
+|Speaker|Play audio signal
+|AV component|Convert a raw media stream to separate audio and video signals
+|===
+
+_* Due to a central role in the system the media manager is detailed in a <<mediaman,separate sub chapter>>._
 
 [.helptext]
 ****
@@ -113,14 +124,11 @@ responsibility according to the following schema:
 | _<black box 2>_ | _<Text>_
 |===
 
-
-
 If you use a list of black box descriptions then you fill in a separate black box template for every important building block .
 Its headline is the name of the black box.
 ****
 
-
-=== <Name black box 1>
+=== Media Manager [[mediaman]]
 
 [.helptext]
 ****
@@ -133,38 +141,26 @@ according the the following black box template:
 * (Optional) directory/file location
 * (Optional) Fulfilled requirements (if you need traceability to requirements).
 * (Optional) Open issues/problems/risks
-
 ****
 
 _<Purpose/Responsibility>_
 
+The task of the media manager is to play the content that the user is requesting. It needs to interpret input requests and transfer the appropriate media stream to the AV component.
+
 _<Interface(s)>_
 
-_<(Optional) Quality/Performance Characteristics>_
+.Media Manager technical interfaces
+[options="header"]
+|===
+| Interface | Description | I/O
+| LAN | Online streaming content is controlled via LAN | in:media control
+| WAN | An internet connection is used by the system to update its firmware via the _Manufacturer_ or to fetch online content | out:HTTPS
+| Remote Control | A remote control is used by the _Owner_ to modify the system state | in:physical interaction
+| Satellite | Using the `DVB-S` standard television program is received by the system | in:DVB-S
+| Media Stream | A raw media stream is sent to the {name-av} for further processing | out:raw stream
+|===
 
-_<(Optional) Directory/File Location>_
-
-_<(Optional) Fulfilled Requirements>_
-
-_<(optional) Open Issues/Problems/Risks>_
-
-
-
-
-=== <Name black box 2>
-
-_<black box template>_
-
-=== <Name black box n>
-
-_<black box template>_
-
-
-=== <Name interface 1>
-
-...
-
-=== <Name interface m>
+_<Quality/Performance Characteristics>_
 
 
 
@@ -178,6 +174,8 @@ You have to decide which building blocks of your system are important enough to 
 Please prefer relevance over completeness. Specify important, surprising, risky, complex or volatile building blocks.
 Leave out normal, simple, boring or standardized parts of your system
 ****
+
+=== Media Manager
 
 include::mediaman:ROOT:page$05_building_block_view.adoc[levelOffset=+1, tags=level2]
 

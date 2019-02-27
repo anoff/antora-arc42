@@ -49,12 +49,12 @@ component "Home Entertainment" as system
 actor Owner
 actor Viewer
 node Manufacturer
-node Satellite
+node "TV broadcast" as broadcast
 
 system -down- Owner
 system -down- Viewer
 system -up- Manufacturer
-system -up- Satellite
+system -up- "TV broadcast" as broadcast
 ....
 
 .System actors
@@ -64,7 +64,7 @@ system -up- Satellite
 | Manufacturer | The manufacturer of the hardware may update firmware without interaction of the device owner
 | Owner | The owner controls the home entertainment system via various controls
 | Viewer | Audio and visual information from the system is consumed by the Viewer (which may be identical to the _Owner_)
-| Satellite | TV content is distributed to the system via satellite service
+| TV Broadcast | TV content is distributed to the system via a broadcasting service over Satellite
 |===
 
 == Technical Context
@@ -114,7 +114,7 @@ Satellite )-down- system
 | Audio | The system generates audio information and outputs it via speakers to the _Owner_ | out:Soundwaves
 | Video | Visual information is tranferred to the _Owner_ | out:Light
 | LAN | Local area network connection is used for communication between the Owner and the system | in:media control
-| WAN | An internet connection is used by the system to update its firmware via the _Manufacturer_ | out:HTTPS
+| WAN | An internet connection is used by the system to update its firmware via the _Manufacturer_ or to fetch online content | out:HTTPS
 | Remote Control | A remote control is used by the _Owner_ to modify the system state | in:physical interaction
-| Satellite | Using the `DVB-S` standard television program is received by the system | in:DVB-S
+| Satellite | Using the `DVB-S` standard television program from the TV broadcast is received | in:DVB-S
 |===
