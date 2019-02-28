@@ -82,30 +82,6 @@
 </ul>
   </nav>
 </div>
-<div class="navigation-explore" data-panel="explore">
-  <div class="context">
-    <span class="title">System Level</span>
-    <span class="version">0.9.0</span>
-  </div>
-  <ul class="components">
-    <li class="component">
-      <span class="title">Media Manager</span>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../mediaman/0.9.0/05_building_block_view.html">0.9.0</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component is-current">
-      <span class="title">System Level</span>
-      <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="03_system_scope_and_context.html">0.9.0</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
     </div>
   </aside>
 </div>
@@ -189,25 +165,29 @@ You will mainly capture scenarios in your documentation to communicate your arch
 </div>
 </div>
 <div class="sect1">
-<h2 id="_runtime_scenario_1"><a class="anchor" href="#_runtime_scenario_1"></a>&lt;Runtime Scenario 1&gt;</h2>
+<h2 id="_show_tv_channel"><a class="anchor" href="#_show_tv_channel"></a>Show TV channel</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><em>&lt;insert runtime diagram or textual description of the scenario&gt;</em></p>
-</li>
-<li>
-<p><em>&lt;insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.&gt;</em></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>In the basic use case of watching a TV channel the media manager simply forwards content from the satellite to the AV component.</p>
+</div>
+<div class="imageblock plantuml">
+<div class="content">
+<img src="_images/runtime-tv-channel.png" alt="runtime-tv-channel">
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_runtime_scenario_2"><a class="anchor" href="#_runtime_scenario_2"></a>&lt;Runtime Scenario 2&gt;</h2>
+<h2 id="_update_software"><a class="anchor" href="#_update_software"></a>Update software</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>An available update of the system software on manufacturer servers is de-coupled into software download and software installation. After a successful download the Owner is informed about an update possibility and waits for his input.</p>
+</div>
+<div class="imageblock plantuml">
+<div class="content">
+<img src="_images/runtime-tv-channel.png" alt="runtime-tv-channel">
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">

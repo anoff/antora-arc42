@@ -82,30 +82,6 @@
 </ul>
   </nav>
 </div>
-<div class="navigation-explore" data-panel="explore">
-  <div class="context">
-    <span class="title">System Level</span>
-    <span class="version">0.9.0</span>
-  </div>
-  <ul class="components">
-    <li class="component">
-      <span class="title">Media Manager</span>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../mediaman/0.9.0/05_building_block_view.html">0.9.0</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component is-current">
-      <span class="title">System Level</span>
-      <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="03_system_scope_and_context.html">0.9.0</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
     </div>
   </aside>
 </div>
@@ -167,11 +143,11 @@ For documentation of your own system you use better the <em>plain</em> version.<
 </div>
 </div>
 <div class="paragraph">
-<p>The goal of the <em>Home Entertainment</em> system is to provide an audio and visual interface for television program and internet based media.</p>
+<p>The goal of the <em>Home Entertainment</em> system is let people watch TV programs via satellite or stream content from the internet.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="_images/tv.jpg" alt="A TV with audio system on a sidebar">
+<img src="_images/tv.jpg" alt="A TV on a sidebar">
 </div>
 <div class="title">Figure 1. source: example home entertainment system (source: <a href="//www.flickr.com/photos/williamhook/1983337986">flickr</a>)</div>
 </div>
@@ -243,7 +219,20 @@ If you as an architect do not know how the quality of your work will be judged â
 </div>
 </div>
 <div class="paragraph">
-<p><code>TODO</code></p>
+<p>The following diagram shows the weighted <strong>SQuaRE</strong> model of ISO25010 (<em>Systems and software Quality Requirements and Evaluation - System and software quality models</em>).</p>
+</div>
+<div class="imageblock plantuml">
+<div class="content">
+<img src="_images/quality-model.png" alt="quality-model">
+</div>
+</div>
+<div class="paragraph">
+<p>The main focus of the system lies on <strong>Usability</strong> by the <em>Owner</em> and <em>Viewer</em>.
+Security aspects are relevant to the extent that neither the system integrity nor the Owners privacy may be compromised.
+The third category of important quality attributes concerns the compatibility of the entire system that should allow easy installation and a certain degree of fault tolerance towards errors in individual system components.</p>
+</div>
+<div class="paragraph">
+<p>As the system is a consumer good with relatively short lifespan, maintainability is not of high importance.</p>
 </div>
 </div>
 <div class="sect2">
@@ -424,8 +413,8 @@ The title of the table is the name of your system, the three columns contain the
 <td class="tableblock halign-left valign-top"><p class="tableblock">Audio and visual information from the system is consumed by the Viewer (which may be identical to the <em>Owner</em>)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Satellite</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TV content is distributed to the system via satellite service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TV Broadcast</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TV content is distributed to the system via a broadcasting service over Satellite</p></td>
 </tr>
 </tbody>
 </table>
@@ -486,7 +475,7 @@ together with a mapping table showing the relationships between channels and inp
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">WAN</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">An internet connection is used by the system to update its firmware via the <em>Manufacturer</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An internet connection is used by the system to update its firmware via the <em>Manufacturer</em> or to fetch online content</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">out:HTTPS</p></td>
 </tr>
 <tr>
@@ -496,7 +485,7 @@ together with a mapping table showing the relationships between channels and inp
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Satellite</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Using the <code>DVB-S</code> standard television program is received by the system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Using the <code>DVB-S</code> standard television program from the TV broadcast is received</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">in:DVB-S</p></td>
 </tr>
 </tbody>
@@ -644,17 +633,43 @@ In the best case you will get away with examples or simple signatures.</p>
 <dl>
 <dt class="hdlist1">Motivation</dt>
 <dd>
-<p><em>&lt;text explanation&gt;</em></p>
+<p>The system is split up based on its physical domain and interfaces on the first level.</p>
 </dd>
 <dt class="hdlist1">Contained Building Blocks</dt>
-<dd>
-<p><em>&lt;Description of contained building block (black boxes)&gt;</em></p>
-</dd>
-<dt class="hdlist1">Important Interfaces</dt>
-<dd>
-<p><em>&lt;Description of important interfaces&gt;</em></p>
-</dd>
 </dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Block</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Media Manager *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manage active media content by taking commands via WAN or the remote control</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LCD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display video signal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Speaker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Play audio signal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AV component</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Convert a raw media stream to separate audio and video signals</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><em>* Due to a central role in the system the media manager is detailed in a <a href="#mediaman">separate sub chapter</a>.</em></p>
 </div>
 <div class="sidebarblock helptext">
 <div class="content">
@@ -694,7 +709,7 @@ Its headline is the name of the black box.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_name_black_box_1"><a class="anchor" href="#_name_black_box_1"></a>5.1.1. &lt;Name black box 1&gt;</h4>
+<h4 id="mediaman"><a class="anchor" href="#mediaman"></a>5.1.1. Media Manager</h4>
 <div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
@@ -729,42 +744,56 @@ according the the following black box template:</p>
 <p><em>&lt;Purpose/Responsibility&gt;</em></p>
 </div>
 <div class="paragraph">
+<p>The task of the media manager is to play the content that the user is requesting. It needs to interpret input requests and transfer the appropriate media stream to the AV component.</p>
+</div>
+<div class="paragraph">
 <p><em>&lt;Interface(s)&gt;</em></p>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Media Manager technical interfaces</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Interface</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">I/O</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Online streaming content is controlled via LAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in:media control</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An internet connection is used by the system to update its firmware via the <em>Manufacturer</em> or to fetch online content</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">out:HTTPS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remote Control</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A remote control is used by the <em>Owner</em> to modify the system state</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in:physical interaction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Satellite</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Using the <code>DVB-S</code> standard television program is received by the system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in:DVB-S</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Media Stream</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A raw media stream is sent to the AV component for further processing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">out:raw stream</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p><em>&lt;(Optional) Quality/Performance Characteristics&gt;</em></p>
+<p><em>&lt;Quality/Performance Characteristics&gt;</em></p>
 </div>
-<div class="paragraph">
-<p><em>&lt;(Optional) Directory/File Location&gt;</em></p>
-</div>
-<div class="paragraph">
-<p><em>&lt;(Optional) Fulfilled Requirements&gt;</em></p>
-</div>
-<div class="paragraph">
-<p><em>&lt;(optional) Open Issues/Problems/Risks&gt;</em></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_name_black_box_2"><a class="anchor" href="#_name_black_box_2"></a>5.1.2. &lt;Name black box 2&gt;</h4>
-<div class="paragraph">
-<p><em>&lt;black box template&gt;</em></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_name_black_box_n"><a class="anchor" href="#_name_black_box_n"></a>5.1.3. &lt;Name black box n&gt;</h4>
-<div class="paragraph">
-<p><em>&lt;black box template&gt;</em></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_name_interface_1"><a class="anchor" href="#_name_interface_1"></a>5.1.4. &lt;Name interface 1&gt;</h4>
-<div class="paragraph">
-<p>&#8230;&#8203;</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_name_interface_m"><a class="anchor" href="#_name_interface_m"></a>5.1.5. &lt;Name interface m&gt;</h4>
-
 </div>
 </div>
 <div class="sect2">
@@ -781,6 +810,8 @@ Leave out normal, simple, boring or standardized parts of your system</p>
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_media_manager"><a class="anchor" href="#_media_manager"></a>5.2.1. Media Manager</h4>
 <div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
@@ -795,6 +826,7 @@ Leave out normal, simple, boring or standardized parts of your system</p>
 </div>
 <div class="paragraph">
 <p>This is an explanation of the media manager subsystem written in another repository.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -889,22 +921,26 @@ You will mainly capture scenarios in your documentation to communicate your arch
 </div>
 </div>
 <div class="sect2">
-<h3 id="_runtime_scenario_1"><a class="anchor" href="#_runtime_scenario_1"></a>6.1. &lt;Runtime Scenario 1&gt;</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><em>&lt;insert runtime diagram or textual description of the scenario&gt;</em></p>
-</li>
-<li>
-<p><em>&lt;insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.&gt;</em></p>
-</li>
-</ul>
+<h3 id="_show_tv_channel"><a class="anchor" href="#_show_tv_channel"></a>6.1. Show TV channel</h3>
+<div class="paragraph">
+<p>In the basic use case of watching a TV channel the media manager simply forwards content from the satellite to the AV component.</p>
+</div>
+<div class="imageblock plantuml">
+<div class="content">
+<img src="_images/runtime-tv-channel.png" alt="runtime-tv-channel">
+</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_runtime_scenario_2"><a class="anchor" href="#_runtime_scenario_2"></a>6.2. &lt;Runtime Scenario 2&gt;</h3>
-
+<h3 id="_update_software"><a class="anchor" href="#_update_software"></a>6.2. Update software</h3>
+<div class="paragraph">
+<p>An available update of the system software on manufacturer servers is de-coupled into software download and software installation. After a successful download the Owner is informed about an update possibility and waits for his input.</p>
+</div>
+<div class="imageblock plantuml">
+<div class="content">
+<img src="_images/runtime-tv-channel.png" alt="runtime-tv-channel">
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_runtime_scenario_n"><a class="anchor" href="#_runtime_scenario_n"></a>6.3. &lt;Runtime Scenario n&gt;</h3>
@@ -1294,22 +1330,6 @@ concrete and measurable.</p>
 <p>In any case the tree should include links to the scenarios of the following section.</p>
 </div>
 </div>
-</div>
-<div class="paragraph">
-<p>The following diagram shows the weighted <strong>SQuaRE</strong> model of ISO25010 (<em>Systems and software Quality Requirements and Evaluation - System and software quality models</em>).</p>
-</div>
-<div class="imageblock plantuml">
-<div class="content">
-<img src="_images/quality-model.png" alt="quality-model">
-</div>
-</div>
-<div class="paragraph">
-<p>The main focus of the system lies on <strong>Usability</strong> by the <em>Owner</em> and <em>Viewer</em>.
-Security aspects are relevant to the extent that neither the system integrity nor the Owners privacy may be compromised.
-The third category of important quality attributes concerns the compatibility of the entire system that should allow easy installation and a certain degree of fault tolerance towards errors in individual system components.</p>
-</div>
-<div class="paragraph">
-<p>As the system is a consumer good with relatively short lifespan, maintainability is not of high importance.</p>
 </div>
 </div>
 <div class="sect2">

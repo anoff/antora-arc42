@@ -82,30 +82,6 @@
 </ul>
   </nav>
 </div>
-<div class="navigation-explore" data-panel="explore">
-  <div class="context">
-    <span class="title">System Level</span>
-    <span class="version">0.9.0</span>
-  </div>
-  <ul class="components">
-    <li class="component">
-      <span class="title">Media Manager</span>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../mediaman/0.9.0/05_building_block_view.html">0.9.0</a>
-        </li>
-      </ul>
-    </li>
-    <li class="component is-current">
-      <span class="title">System Level</span>
-      <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="03_system_scope_and_context.html">0.9.0</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
     </div>
   </aside>
 </div>
@@ -224,17 +200,43 @@ In the best case you will get away with examples or simple signatures.</p>
 <dl>
 <dt class="hdlist1">Motivation</dt>
 <dd>
-<p><em>&lt;text explanation&gt;</em></p>
+<p>The system is split up based on its physical domain and interfaces on the first level.</p>
 </dd>
 <dt class="hdlist1">Contained Building Blocks</dt>
-<dd>
-<p><em>&lt;Description of contained building block (black boxes)&gt;</em></p>
-</dd>
-<dt class="hdlist1">Important Interfaces</dt>
-<dd>
-<p><em>&lt;Description of important interfaces&gt;</em></p>
-</dd>
 </dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Block</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Media Manager *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manage active media content by taking commands via WAN or the remote control</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LCD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Display video signal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Speaker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Play audio signal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AV component</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Convert a raw media stream to separate audio and video signals</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><em>* Due to a central role in the system the media manager is detailed in a <a href="#mediaman">separate sub chapter</a>.</em></p>
 </div>
 <div class="sidebarblock helptext">
 <div class="content">
@@ -274,7 +276,7 @@ Its headline is the name of the black box.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_name_black_box_1"><a class="anchor" href="#_name_black_box_1"></a>&lt;Name black box 1&gt;</h3>
+<h3 id="mediaman"><a class="anchor" href="#mediaman"></a>Media Manager</h3>
 <div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
@@ -309,42 +311,56 @@ according the the following black box template:</p>
 <p><em>&lt;Purpose/Responsibility&gt;</em></p>
 </div>
 <div class="paragraph">
+<p>The task of the media manager is to play the content that the user is requesting. It needs to interpret input requests and transfer the appropriate media stream to the AV component.</p>
+</div>
+<div class="paragraph">
 <p><em>&lt;Interface(s)&gt;</em></p>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Media Manager technical interfaces</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Interface</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">I/O</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Online streaming content is controlled via LAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in:media control</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An internet connection is used by the system to update its firmware via the <em>Manufacturer</em> or to fetch online content</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">out:HTTPS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remote Control</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A remote control is used by the <em>Owner</em> to modify the system state</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in:physical interaction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Satellite</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Using the <code>DVB-S</code> standard television program is received by the system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in:DVB-S</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Media Stream</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A raw media stream is sent to the AV component for further processing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">out:raw stream</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p><em>&lt;(Optional) Quality/Performance Characteristics&gt;</em></p>
+<p><em>&lt;Quality/Performance Characteristics&gt;</em></p>
 </div>
-<div class="paragraph">
-<p><em>&lt;(Optional) Directory/File Location&gt;</em></p>
-</div>
-<div class="paragraph">
-<p><em>&lt;(Optional) Fulfilled Requirements&gt;</em></p>
-</div>
-<div class="paragraph">
-<p><em>&lt;(optional) Open Issues/Problems/Risks&gt;</em></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_name_black_box_2"><a class="anchor" href="#_name_black_box_2"></a>&lt;Name black box 2&gt;</h3>
-<div class="paragraph">
-<p><em>&lt;black box template&gt;</em></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_name_black_box_n"><a class="anchor" href="#_name_black_box_n"></a>&lt;Name black box n&gt;</h3>
-<div class="paragraph">
-<p><em>&lt;black box template&gt;</em></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_name_interface_1"><a class="anchor" href="#_name_interface_1"></a>&lt;Name interface 1&gt;</h3>
-<div class="paragraph">
-<p>&#8230;&#8203;</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_name_interface_m"><a class="anchor" href="#_name_interface_m"></a>&lt;Name interface m&gt;</h3>
-
 </div>
 </div>
 </div>
@@ -363,6 +379,8 @@ Leave out normal, simple, boring or standardized parts of your system</p>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_media_manager"><a class="anchor" href="#_media_manager"></a>Media Manager</h3>
 <div class="sidebarblock helptext">
 <div class="content">
 <div class="paragraph">
@@ -377,6 +395,7 @@ Leave out normal, simple, boring or standardized parts of your system</p>
 </div>
 <div class="paragraph">
 <p>This is an explanation of the media manager subsystem written in another repository.</p>
+</div>
 </div>
 </div>
 </div>
