@@ -54,7 +54,7 @@ node "TV broadcast" as broadcast
 system -down- Owner
 system -down- Viewer
 system -up- Manufacturer
-system -up- "TV broadcast" as broadcast
+system -up- broadcast
 ....
 
 .System actors
