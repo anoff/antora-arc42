@@ -20,7 +20,6 @@ asciidoc:
     sectanchors: true
     plantuml-server-url: http://www.plantuml.com/plantuml
     plantuml-fetch-diagram: true
-    imagesoutdir: temp_image/
   extensions:
   - asciidoctor-plantuml
 output:

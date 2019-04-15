@@ -52,7 +52,7 @@ av -> LCD: video stream
 
 An available update of the system software on manufacturer servers is de-coupled into software download and software installation. After a successful download the Owner is informed about an update possibility and waits for his input.
 
-[plantuml, runtime-tv-channel, png]
+[plantuml, runtime-update-sw, png]
 ----
 @startuml
 skinparam monochrome true
