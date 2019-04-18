@@ -162,8 +162,6 @@ _<Interface(s)>_
 
 _<Quality/Performance Characteristics>_
 
-
-
 == Level 2
 
 [.helptext]
@@ -177,7 +175,7 @@ Leave out normal, simple, boring or standardized parts of your system
 
 === Media Manager
 
-include::mediaman:ROOT:page$05_building_block_view.adoc[levelOffset=+1, tags=level2]
+include::mediaman:ROOT:partial$05_building_block_view.adoc[levelOffset=+1, tags=level2]
 
 == Level 3
 
