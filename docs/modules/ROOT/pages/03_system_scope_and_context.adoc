@@ -1,5 +1,4 @@
 = System Scope and Context
-:page-partial:
 :plantuml-server-url: http://plantuml.com/plantuml
 
 [.helptext]

@@ -1,5 +1,4 @@
 = Runtime View
-:page-partial:
 
 [.helptext]
 ****

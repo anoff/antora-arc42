@@ -1,5 +1,4 @@
 = Glossary
-:page-partial:
 
 [.helptext]
 ****

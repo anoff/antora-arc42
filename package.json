@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prevent-jekyll": "touch dist/.nojekyll",
-    "build": "antora generate playbook.yml --clean",
-    "build:prod": "antora generate playbook-remote.yml --clean && sh move-puml.sh",
+    "build": "antora generate playbook-local.yml --clean",
+    "build:prod": "antora generate playbook.yml --clean && sh move-puml.sh",
     "dist": "npm run build && npm run prevent-jekyll",
     "dist:prod": "npm run build:prod && npm run prevent-jekyll"
   },

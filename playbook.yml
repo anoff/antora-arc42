@@ -5,21 +5,22 @@ site:
   start_page: system::03_system_scope_and_context.adoc
 content:
   sources:
-  - url: ./
+  - url: https://github.com/anoff/antora-arc42.git
     start_path: docs
-    branches: [HEAD]
-  - url: ../antora-arc42-mediaman
+    branches: [master]
+  - url: https://github.com/anoff/antora-arc42-mediaman.git
     start_path: docs
-    branches: [HEAD]
+    branches: [master]
 ui:
   bundle:
     # url: /developer/anoff/antora-arc42-ui/build/ui-bundle.zip # local
-    url: https://github.com/anoff/antora-arc42-ui/releases/download/0.4/ui-bundle.zip
+    url: https://github.com/anoff/antora-arc42-ui/releases/download/1.0/ui-bundle.zip
 asciidoc:
   attributes:
     sectanchors: true
     plantuml-server-url: http://www.plantuml.com/plantuml
     plantuml-fetch-diagram: true
+    imagesoutdir: temp_image/
   extensions:
   - asciidoctor-plantuml
 output:

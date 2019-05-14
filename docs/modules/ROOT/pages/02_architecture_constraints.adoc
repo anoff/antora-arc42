@@ -1,5 +1,4 @@
 = Architecture Constraints
-:page-partial:
 
 [.helptext]
 ****

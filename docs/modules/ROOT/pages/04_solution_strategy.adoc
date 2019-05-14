@@ -1,5 +1,4 @@
 = Solution Strategy
-:page-partial:
 
 [.helptext]
 ****

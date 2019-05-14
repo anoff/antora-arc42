@@ -1,5 +1,4 @@
 = Introduction and Goals
-:page-partial:
 
 [.helptext]
 ****

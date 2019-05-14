@@ -1,5 +1,4 @@
 = ADR - <Number> <Decision Shortname>
-:page-partial:
 
 [.helptext]
 ****

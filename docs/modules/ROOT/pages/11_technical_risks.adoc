@@ -1,5 +1,4 @@
 = Risks and Technical Debts
-:page-partial:
 
 [.helptext]
 ****

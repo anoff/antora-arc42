@@ -1,5 +1,4 @@
 = Building Block View
-:page-partial:
 :plantuml-server-url: http://plantuml.com/plantuml
 :name-av: AV component
 

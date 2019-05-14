@@ -1,5 +1,4 @@
 = Quality Requirements
-:page-partial:
 :plantuml-server-url: http://plantuml.com/plantuml
 
 [.helptext]

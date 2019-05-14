@@ -1,26 +1,25 @@
 site:
   title: Antora ARC42 Template
   # the 404 page and sitemap files only get generated when the url property is set
-  url: https://anoff.github.io/antora-arc42
+  url: http://localhost:5000
   start_page: system::03_system_scope_and_context.adoc
 content:
   sources:
-  - url: https://github.com/anoff/antora-arc42.git
+  - url: ./
     start_path: docs
-    branches: [master]
-  - url: https://github.com/anoff/antora-arc42-mediaman.git
+    branches: [HEAD]
+  - url: ../antora-arc42-mediaman
     start_path: docs
-    branches: [master]
+    branches: [HEAD]
 ui:
   bundle:
-    # url: /developer/anoff/antora-arc42-ui/build/ui-bundle.zip # local
-    url: https://github.com/anoff/antora-arc42-ui/releases/download/0.4/ui-bundle.zip
+    url: /developer/anoff/antora-arc42-ui/build/ui-bundle.zip # local
+    # url: https://github.com/anoff/antora-arc42-ui/releases/download/0.4/ui-bundle.zip
 asciidoc:
   attributes:
     sectanchors: true
     plantuml-server-url: http://www.plantuml.com/plantuml
     plantuml-fetch-diagram: true
-    imagesoutdir: temp_image/
   extensions:
   - asciidoctor-plantuml
 output:
