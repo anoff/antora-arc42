@@ -5,8 +5,13 @@
 * xref:05_building_block_view.adoc[5. Building Block View]
 * xref:06_runtime_view.adoc[6. Runtime View]
 * xref:07_deployment_view.adoc[7. Deployment View]
-* xref:concepts:index.adoc[8. Cross-cutting Concepts]
-* xref:adr:index.adoc[9. Architecture Decisions]
+* xref:concepts:intro.adoc[8. Cross-cutting Concepts]
++
+--
+include::concepts:partial$nav.adoc[]
+--
++
+include::adr:partial$nav.adoc[]
 * xref:10_quality_scenarios.adoc[10. Quality Requirements]
 * xref:11_technical_risks.adoc[11. Risks and Technical Debts]
 * xref:12_glossary.adoc[12. Glossary]

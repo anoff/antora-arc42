@@ -1,3 +1,0 @@
-= Architecture Decisions
-
-include::system:adr:page$00-template.adoc[leveloffset=+1]

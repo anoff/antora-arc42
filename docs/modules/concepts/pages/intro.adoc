@@ -1,5 +1,4 @@
 = Cross-cutting Concepts
-:page-partial:
 
 [.helptext]
 ****
